@@ -20,6 +20,14 @@ public class Car {
         this.weight = weight;
     }
 
+    public void setD(Driver d) {
+        this.d = d;
+    }
+
+    public void setE(Engine e) {
+        this.e = e;
+    }
+
     public String getNameCar() {
         return nameCar;
     }
