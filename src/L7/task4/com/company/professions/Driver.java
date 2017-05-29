@@ -1,4 +1,4 @@
-package L7.task4.com.company.details;
+package L7.task4.com.company.professions;
 
 /**
  * Created by roman_v on 22.05.17.

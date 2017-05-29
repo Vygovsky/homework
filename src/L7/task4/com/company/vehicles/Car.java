@@ -1,9 +1,7 @@
 package L7.task4.com.company.vehicles;
 
-import L7.task4.com.company.details.Driver;
+import L7.task4.com.company.professions.Driver;
 import com.sun.xml.internal.ws.api.pipe.Engine;
-
-
 /**
  * Created by roman_v on 22.05.17.
  */
@@ -86,7 +84,7 @@ public class Car {
         return result;
     }
 
-    public void setHigth(double weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
