@@ -10,13 +10,24 @@ public class MinOfThreeNumbers {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Введите первое число: ");
-            int x = sc.nextInt();
+            int x = getNumber(sc);
             System.out.print("Введите второе число: ");
-            int y = sc.nextInt();
+            int y = getNumber(sc);
             System.out.print("Введите третье число: ");
-            int z = sc.nextInt();
-            int minChislo = (x < y) ? (x < z) ? x : z : (y < z) ? y : z;
-            System.out.println("Самое минимальное число равно: " + minChislo);
+            int z = getNumber(sc);
+            int minNumber = (x < y) ? (x < z) ? x : z : (y < z) ? y : z;
+            System.out.println("Самое минимальное число равно: " + minNumber);
         }
+    }
+
+    public static int getNumber(Scanner sc) {
+        if (sc.hasNextInt()) {
+            int a = sc.nextInt();
+            return a;
+        } else {
+            System.out.println("Вы ввели не число");
+            System.exit(0);
+        }
+    return 0;
     }
 }
