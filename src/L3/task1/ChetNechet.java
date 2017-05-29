@@ -10,7 +10,7 @@ public class ChetNechet {
             if ((i % 2) == 0) {
                 System.out.println("Вывод четного числа:");
             } else {
-                if (i % 1 == 0) System.out.println("Вы ввели нечетное число ");
+                System.out.println("Вы ввели нечетное число ");
             }
         } else {
             System.out.println("ОШИБКА");
