@@ -6,7 +6,7 @@ public class Matrix {
     private int colunsNum;
 
     public Matrix() {
-        this(4,4);
+        this(4, 4);
     }
 
     public Matrix(int rowsNum, int colunsNum) {
@@ -43,7 +43,6 @@ public class Matrix {
         for (int i = 0; i < getRowsNum(); i++) {
             for (int j = 0; j < getColunsNum(); j++) {
                 System.out.print(getElement(i, j) + "\t");
-
             }
             System.out.println();
         }
@@ -58,10 +57,15 @@ public class Matrix {
     }
 
     public void sum(Matrix m2) {
-        for (int i = 0; i < getRowsNum(); i++) {
-            for (int j = 0; j < getColunsNum(); j++) {
-                this.setElement(i, j, this.getElement(i, j) + m2.getElement(i, j));
+        if (this.getRowsNum() == m2.getRowsNum() && this.getColunsNum() == m2.getColunsNum()) {
+            System.out.println("Матрицы имеет одинаковую размерность");
+            for (int i = 0; i < getRowsNum(); i++) {
+                for (int j = 0; j < getColunsNum(); j++) {
+                    this.setElement(i, j, this.getElement(i, j) + m2.getElement(i, j));
+                }
             }
+        } else {
+            System.out.println("Матрицы имеют разные размерности");
         }
     }
 
