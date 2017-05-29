@@ -47,15 +47,35 @@ public class Car {
         return weight;
     }
 
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void start() {
+        System.out.println("Поехали");
+    }
+
+    public void stop() {
+        System.out.println("Остановиться");
+    }
+
+    public void turnRight() {
+        System.out.println("Поворот направо");
+    }
+
+    public void turnLeft() {
+        System.out.println("Поворот налево");
+    }
+
     @Override
     public String toString() {
         return "Car{" +
-                "nameCar='" + nameCar + '\'' +
-                ", mark='" + mark + '\'' +
-                ", weight=" + weight +
-                ", d=" + d +
-                ", e=" + e +
-                '}';
+            "nameCar='" + nameCar + '\'' +
+            ", mark='" + mark + '\'' +
+            ", weight=" + weight +
+            ", d=" + d +
+            ", e=" + e +
+            '}';
     }
 
     @Override
@@ -83,25 +103,5 @@ public class Car {
         result = 31 * result + d.hashCode();
         result = 31 * result + e.hashCode();
         return result;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public void start() {
-        System.out.println("Поехали");
-    }
-
-    public void stop() {
-        System.out.println("Остановиться");
-    }
-
-    public void turnRight() {
-        System.out.println("Поворот направо");
-    }
-
-    public void turnLeft() {
-        System.out.println("Поворот налево");
     }
 }
