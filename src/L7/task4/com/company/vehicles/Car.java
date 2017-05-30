@@ -69,13 +69,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-            "nameCar='" + nameCar + '\'' +
-            ", mark='" + mark + '\'' +
-            ", weight=" + weight +
-            ", d=" + d +
-            ", e=" + e +
-            '}';
+        return "Car{" + "nameCar='" + nameCar + '\'' + ", mark='" + mark + '\'' + ", weight=" + weight + ", d=" + d + ", e=" + e + '}';
     }
 
     @Override
