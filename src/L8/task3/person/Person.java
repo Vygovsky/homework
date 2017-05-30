@@ -48,6 +48,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +super.toString()+ "fullname='" + fullname + '\'' + ", age=" + age + '}';
+        return "Person{" + super.toString() + "fullname='" + fullname + '\'' + ", age=" + age + '}';
     }
 }
