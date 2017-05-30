@@ -20,5 +20,7 @@ public class DemoCar2 {
         lorry.setE(engine1);
         sportCar.setD(driver2);
         sportCar.setE(engine2);
+        System.out.println(lorry);
+        System.out.println(sportCar);
     }
 }

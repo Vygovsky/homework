@@ -43,6 +43,6 @@ public class SportCar extends Car {
 
     @Override
     public String toString() {
-        return "SportCar{" + "speed=" + speed + '}';
+        return "SportCar{" + super.toString() + "speed=" + speed + '}';
     }
 }
