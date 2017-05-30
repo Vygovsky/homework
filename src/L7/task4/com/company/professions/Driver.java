@@ -1,23 +1,16 @@
 package L7.task4.com.company.professions;
 
+import L8.task3.person.Person;
+
 /**
  * Created by roman_v on 22.05.17.
  */
-public class Driver {
-    private String fullname;
+public class Driver extends Person {
     private double experience;
 
-    public Driver(String fullname, double experience) {
-        this.setFullname(fullname);
-        this.setExperience(experience);
-    }
-
-    public String getFullname() {
-        return fullname;
-    }
-
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public Driver(String fullname, int age, double experience) {
+        super(fullname, age);
+        this.experience = experience;
     }
 
     public double getExperience() {
@@ -32,28 +25,24 @@ public class Driver {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
 
         Driver driver = (Driver) o;
 
-        if (Double.compare(driver.experience, experience) != 0) return false;
-        return fullname.equals(driver.fullname);
-    }
-
-    @Override
-    public String toString() {
-        return "Driver{" +
-            "fullname='" + fullname + '\'' +
-            ", experience=" + experience +
-            '}';
+        return Double.compare(driver.experience, experience) == 0;
     }
 
     @Override
     public int hashCode() {
-        int result;
+        int result = super.hashCode();
         long temp;
-        result = fullname.hashCode();
         temp = Double.doubleToLongBits(experience);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Driver{" + "experience=" + experience + '}';
     }
 }
