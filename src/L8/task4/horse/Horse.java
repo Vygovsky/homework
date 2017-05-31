@@ -10,7 +10,7 @@ public class Horse extends Animals {
     private double carrying;
 
     public void catNoise() {
-        System.out.println("Гогочит");
+        System.out.println(" Гогочит");
     }
 
     public void toEat() {

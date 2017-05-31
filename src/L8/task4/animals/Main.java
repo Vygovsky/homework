@@ -10,7 +10,7 @@ import L8.task4.horse.Horse;
 public class Main {
     public static void main(String[] args) {
         Cat[] cats = {
-                new Cat("Дом", "Корм", 2, 2.5, "Муська", 5),
+                new Cat(" Дом", "Корм", 2, 2.5, "Муська", 5),
                 new Cat("Квартира", "Раба", 5, 3, "Кузя", 8),
                 new Cat("Дом", "Молоко", 12, 12, "Ленин", 3)};
     }

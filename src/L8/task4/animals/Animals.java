@@ -10,7 +10,7 @@ public class Animals {
     private double weight;
 
     public void  makeNoise(){
-        System.out.println("Шум");
+        System.out.println(" Шум");
     }
     public void toEat(){
         System.out.println("Еда");

@@ -10,7 +10,7 @@ public class Dog extends Animals {
     private double biteForce;
 
     public void catNoise() {
-        System.out.println("Лает");
+        System.out.println(" Лает");
     }
     public void toEat(){
         System.out.println("");
