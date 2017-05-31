@@ -9,15 +9,7 @@ public class Horse extends Animals {
     private String name;
     private double carrying;
 
-    public void catNoise() {
-        System.out.println(" Гогочит");
-    }
-
-    public void toEat() {
-        System.out.println("");
-    }
-
-    public Horse(String location, String food, int ages, double whight) {
+    public Horse(String location, String food, int ages, double whight, String name, double carrying) {
         super(location, food, ages, whight);
         this.name = name;
         this.carrying = carrying;
@@ -37,6 +29,16 @@ public class Horse extends Animals {
 
     public void setCarrying(double carrying) {
         this.carrying = carrying;
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Ржет");
+    }
+
+    @Override
+    public void toEat() {
+        System.out.println(getFood());
     }
 }
 

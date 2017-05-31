@@ -9,13 +9,6 @@ public class Dog extends Animals {
     private String name;
     private double biteForce;
 
-    public void catNoise() {
-        System.out.println(" Лает");
-    }
-    public void toEat(){
-        System.out.println("");
-    }
-
     public Dog(String location, String food, int ages, double whight, String name, double biteForce) {
         super(location, food, ages, whight);
         this.name = name;
@@ -36,5 +29,15 @@ public class Dog extends Animals {
 
     public void setBiteForce(double biteForce) {
         this.biteForce = biteForce;
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Лает");
+    }
+
+    @Override
+    public void toEat() {
+        System.out.println(getFood());
     }
 }

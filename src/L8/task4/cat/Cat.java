@@ -9,13 +9,6 @@ public class Cat extends Animals {
     private String name;
     private int lives;
 
-    public void catNoise() {
-        System.out.println(" Мяукает");
-    }
-    public void toEat(){
-        System.out.println("");
-    }
-
     public Cat(String location, String food, int ages, double whight, String name, int lives) {
         super(location, food, ages, whight);
         this.name = name;
@@ -36,5 +29,15 @@ public class Cat extends Animals {
 
     public void setLives(int lives) {
         this.lives = lives;
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Мяукает");
+    }
+
+    @Override
+    public void toEat() {
+        System.out.println(getFood());
     }
 }
