@@ -1,4 +1,4 @@
-package L8.task4.Vet;
+package L8.task4.vet;
 
 import L8.task4.animals.Animals;
 
