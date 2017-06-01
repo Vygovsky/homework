@@ -46,14 +46,14 @@ public class User extends Person {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + getFullname() + '\'' +
-                ", idCard=" + idCard +
-                ", facultet='" + facultet + '\'' +
-                '}';
+        return "User{" + "name='" + getFullname() + '\'' + ", idCard=" + idCard + ", facultet='" + facultet + '\'' + '}';
     }
 
     public void takeBook(Book book) {
         System.out.println(this.getFullname() + " взял " + book.getName());
+    }
+
+    public void returnBook(Book book) {
+        System.out.println(this.getFullname() + " отдал " + book.getName());
     }
 }
