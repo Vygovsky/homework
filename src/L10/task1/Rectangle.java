@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
     private double high;
     private double width;
 
-    public double areaRectanle() {
+    public double area() {
         return high * width;
     }
 

@@ -13,7 +13,7 @@ public class Circle extends Shape {
         return 2 * Math.PI * radius;
     }
 
-    public double circleArea() {
+    public double area() {
         return Math.PI * radius * radius;
     }
 

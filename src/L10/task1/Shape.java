@@ -8,6 +8,10 @@ public abstract class Shape {
 
     abstract void draw();
 
+    public void Shape() {
+
+    }
+
     public Shape() {
         this.color = color;
     }
