@@ -76,7 +76,6 @@ public class Circle extends Shape {
     public String toString() {
         return "Circle{" + "x=" + x + ", y=" + y + ", radius=" + radius + '}';
     }
-
     @Override
     void draw() {
         System.out.println("Рисую круг");

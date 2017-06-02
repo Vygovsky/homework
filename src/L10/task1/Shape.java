@@ -6,7 +6,7 @@ package L10.task1;
 public abstract class Shape {
      String color;
 
-     abstract void draw();
+     abstract void  draw();
 
         public Shape() {
         this.color = color;

@@ -1,6 +1,6 @@
 package L10.task1;
 
-        /**
+/**
  * Created by roman_v on 02.06.17.
  */
 public class Main {
