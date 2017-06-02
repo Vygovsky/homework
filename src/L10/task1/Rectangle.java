@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
         return top;
     }
 
-    public void setTop(double top) {
+    public void setTop(double  top) {
         this.top = top;
     }
 
