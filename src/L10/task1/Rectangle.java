@@ -20,11 +20,11 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
-    public double getTop()  {
+    public double getTop() {
         return top;
     }
 
-    public void setTop(double  top) {
+    public void setTop(double top) {
         this.top = top;
     }
 
