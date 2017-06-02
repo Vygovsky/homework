@@ -10,10 +10,6 @@ public class Main {
                 new Rectangle(2, 6, 10, 3)};
         for (Shape shape : figura) {
         }
-        figura[0].toString();
-        figura[1].getColor();
-
     }
-
 }
 
