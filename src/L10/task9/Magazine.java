@@ -11,7 +11,7 @@ public class Magazine implements Printable {
     }
     @Override
     public void print() {
-        System.out.println("Печатает журнал");
+        System.out.println("Печатается журнал \'"+getName()+'\'');
     }
 
     public String getName() {

@@ -11,13 +11,7 @@ public class Main {
         p[2] = new Magazine("Инфо-криминал");
         p[3] = new Magazine("Божья коровка");
         for (Printable printable : p) {
-            if (printable instanceof Book) {
-                System.out.println("Печатаем книгу  " + ((Book) printable).getName());
-            } else {
-                if (printable instanceof Magazine) {
-                    System.out.println("Выводим журнал " + ((Magazine) printable).getName());
-                }
-            }
+            printable.print();
         }
     }
 }
