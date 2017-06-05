@@ -8,7 +8,7 @@ public class Book implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Печатается книга \'"+getName()+'\'');
+        System.out.println("Печатается книга \'" + getName() + '\'');
     }
 
     public Book(String name) {

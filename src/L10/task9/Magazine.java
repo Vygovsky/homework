@@ -9,9 +9,10 @@ public class Magazine implements Printable {
     public Magazine(String name) {
         this.name = name;
     }
+
     @Override
     public void print() {
-        System.out.println("Печатается журнал \'"+getName()+'\'');
+        System.out.println("Печатается журнал \'" + getName() + '\'');
     }
 
     public String getName() {
