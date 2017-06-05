@@ -45,4 +45,29 @@ public class Tulpan extends Flower {
     public double cost() {
         return brand.getCost();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Tulpan tulpan = (Tulpan) o;
+
+        return brand == tulpan.brand;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + brand.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Tulpan{" +
+            "brand=" + brand +
+            '}';
+    }
 }
