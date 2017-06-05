@@ -3,14 +3,12 @@ package L8.flowers;
 /**
  * Created by student on 5/24/2017.
  */
-public class Flower {
+public abstract class Flower {
     private String name;
-    private double cost;
     private static int count;
 
-    public Flower(String name, double cost) {
+    public Flower(String name) {
         this.setName(name);
-        this.setCost(cost);
         count++;
     }
 
@@ -22,14 +20,6 @@ public class Flower {
         this.name = name;
     }
 
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,29 +27,24 @@ public class Flower {
 
         Flower flower = (Flower) o;
 
-        if (Double.compare(flower.cost, cost) != 0) return false;
-        return !(name != null ? !name.equals(flower.name) : flower.name != null);
+        return name.equals(flower.name);
     }
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = name != null ? name.hashCode() : 0;
-        temp = Double.doubleToLongBits(cost);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
+        return name.hashCode();
     }
 
     @Override
     public String toString() {
         return "Flower{" +
-                "name='" + name + '\'' +
-                ", cost=" + cost +
-                '}';
+            "name='" + name + '\'' +
+            '}';
     }
 
     public static int getCount() {
         return count;
     }
+
+    public abstract double cost();
 }
