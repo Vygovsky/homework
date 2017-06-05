@@ -49,11 +49,42 @@ public class User extends Person {
         return "User{" + "name='" + getFullname() + '\'' + ", idCard=" + idCard + ", facultet='" + facultet + '\'' + '}';
     }
 
-    public void takeBook(Book book) {
-        System.out.println(this.getFullname() + " взял " + book.getName());
+    public void takeBook(int count){
+        System.out.println(this.getFullname() + " взял книг - " + count + " шт");
     }
 
-    public void returnBook(Book book) {
+    public void takeBook(String... books){
+        System.out.print(this.getFullname() + " взял ");
+        for (String book : books) {
+            System.out.print('\"' + book+"\", ");
+        }
+        System.out.println();
+    }
+
+    public void takeBook(Book... books){
+        System.out.print(this.getFullname() + " взял ");
+        for (Book book : books) {
+            System.out.print('\"' + book.getName()+"\", ");
+        }
+        System.out.println();
+    }
+
+    public void returnBook(Book book){
         System.out.println(this.getFullname() + " отдал " + book.getName());
+    }
+    public void returnBook(String... books){
+        System.out.print(this.getFullname() + " отдал ");
+        for (String book : books) {
+            System.out.print('\"' + book+"\", ");
+        }
+        System.out.println();
+    }
+
+    public void returnBook(Book... books){
+        System.out.print(this.getFullname() + " отдал ");
+        for (Book book : books) {
+            System.out.print('\"' + book.getName()+"\", ");
+        }
+        System.out.println();
     }
 }
