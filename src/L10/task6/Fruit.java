@@ -4,30 +4,35 @@ package L10.task6;
  * Created by Roman_v on 05.06.2017.
  */
 public abstract class Fruit {
-    private String name;
-    private static double count;
+    private String sortName;
+    private  double cost;
 
-    public Fruit(String name) {
-        this.name = name;
-        count++;
+    public Fruit(String sortName, double cost) {
+        this.sortName = sortName;
+        this.cost = cost;
     }
 
-    public String getName() {
-        return name;
+    public String getSortName() {
+        return sortName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSortName(String sortName) {
+        this.sortName = sortName;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     void printManufacturerInfo() {
         System.out.println("Made in Ukraine");
     }
 
-    public static  double getCount(){
-        return count;
-    }
     public abstract double cost();
+
+    public double getCost() {
+        return cost;
+    }
 }
 
 
