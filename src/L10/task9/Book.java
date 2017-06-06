@@ -1,15 +1,18 @@
-package L8.flowers;
+package L10.task9;
 
 /**
- * Created by student on 5/24/2017.
+ * Created by Roman_v on 03.06.2017.
  */
-public abstract class Flower {
+public class Book implements Printable {
     private String name;
-    private static int count;
 
-    public Flower(String name) {
-        this.setName(name);
-        count++;
+    @Override
+    public void print() {
+        System.out.println("Печатается книга \'" + getName() + '\'');
+    }
+
+    public Book(String name) {
+        this.name = name;
     }
 
     public String getName() {
@@ -25,9 +28,9 @@ public abstract class Flower {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Flower flower = (Flower) o;
+        Book book = (Book) o;
 
-        return name.equals(flower.name);
+        return name.equals(book.name);
     }
 
     @Override
@@ -37,14 +40,8 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
+        return "Book{" +
             "name='" + name + '\'' +
             '}';
     }
-
-    public static int getCount() {
-        return count;
-    }
-
-    public abstract double cost();
 }
