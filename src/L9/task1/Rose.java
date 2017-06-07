@@ -6,40 +6,40 @@ import L8.flowers.Flower;
  * Created by Roman_v on 05.06.2017.
  */
 public class Rose extends Flower {
-    public enum Brand2 {
+    public enum Brand {
         WHITE(45),
         BLUE(56),
         BURGUNDY(50);
 
-        private double cost2;
+        private double cost;
 
-        Brand2(double cost2) {
-            this.cost2 = cost2;
+        Brand(double cost) {
+            this.cost = cost;
         }
 
-        public double getCost2() {
-            return cost2;
+        public double getCost() {
+            return cost;
         }
     }
 
-    public Brand2 brand2;
+    public Brand brand;
 
-    public Rose(String name, Brand2 brand2) {
+    public Rose(String name, Brand brand) {
         super(name);
-        this.brand2 = brand2;
+        this.brand = brand;
     }
 
-    public Brand2 getBrand2() {
-        return brand2;
+    public Brand getBrand() {
+        return brand;
     }
 
-    public void setBrand2(Brand2 brand2) {
-        this.brand2 = brand2;
+    public void setBrand(Brand brand2) {
+        this.brand = brand2;
     }
 
     @Override
     public double cost() {
-        return brand2.cost2;
+        return brand.cost;
     }
 
     @Override
@@ -50,20 +50,20 @@ public class Rose extends Flower {
 
         Rose rose = (Rose) o;
 
-        return brand2 == rose.brand2;
+        return brand == rose.brand;
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + brand2.hashCode();
+        result = 31 * result + brand.hashCode();
         return result;
     }
 
     @Override
     public String toString() {
         return "Rose{" +
-            "brand2=" + brand2 +
+            "brand=" + brand +
             '}';
     }
 }

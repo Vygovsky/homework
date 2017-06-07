@@ -7,40 +7,40 @@ import L8.flowers.Flower;
  */
 public class Exotic extends Flower {
 
-    enum Brand3 {
+    enum Brand {
         PHALAENOPSIS(452.36),
         SPREKELIA(556.89),
         LITHOPS(1103);
 
-        private double cost3;
+        private double cost;
 
-        Brand3(double cost3) {
-            this.cost3 = cost3;
+        Brand(double cost) {
+            this.cost = cost;
         }
 
-        public double getCost3() {
-            return cost3;
+        public double getCost() {
+            return cost;
         }
     }
 
-    private Brand3 brand3;
+    private Brand brand;
 
-    public Exotic(String name, Brand3 brand3) {
+    public Exotic(String name, Brand brand) {
         super(name);
-        this.brand3 = brand3;
+        this.brand = brand;
     }
 
-    public Brand3 getBrand3() {
-        return brand3;
+    public Brand getBrand3() {
+        return brand;
     }
 
-    public void setBrand3(Brand3 brand3) {
-        this.brand3 = brand3;
+    public void setBrand3(Brand brand) {
+        this.brand = brand;
     }
 
     @Override
     public double cost() {
-        return brand3.cost3;
+        return brand.cost;
     }
 
     @Override
@@ -51,20 +51,20 @@ public class Exotic extends Flower {
 
         Exotic exotic = (Exotic) o;
 
-        return brand3 == exotic.brand3;
+        return brand == exotic.brand;
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + brand3.hashCode();
+        result = 31 * result + brand.hashCode();
         return result;
     }
 
     @Override
     public String toString() {
         return "Exotic{" +
-            "brand3=" + brand3 +
+            "brand3=" + brand +
             '}';
     }
 }
