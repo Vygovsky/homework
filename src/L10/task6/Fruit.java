@@ -5,7 +5,7 @@ package L10.task6;
  */
 public abstract class Fruit {
     private String sortName;
-    private  double cost;
+    private double cost;
 
     public Fruit(String sortName, double cost) {
         this.sortName = sortName;

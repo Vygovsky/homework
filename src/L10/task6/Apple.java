@@ -22,7 +22,4 @@ public class Apple extends Fruit {
     public void setNameSort(String nameSort) {
         this.name = nameSort;
     }
-
-
-
 }
