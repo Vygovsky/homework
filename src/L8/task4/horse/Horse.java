@@ -1,11 +1,11 @@
 package L8.task4.horse;
 
-import L8.task4.animals.Animals;
+import L8.task4.animals.Animal;
 
 /**
  * Created by roman_v on 31.05.17.
  */
-public class Horse extends Animals {
+public class Horse extends Animal {
     private String name;
     private double carrying;
 

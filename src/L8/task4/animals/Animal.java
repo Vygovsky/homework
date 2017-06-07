@@ -3,7 +3,7 @@ package L8.task4.animals;
 /**
  * Created by roman_v on 31.05.17.
  */
-public class Animals {
+public class Animal {
     private  String location;
     private  String food;
     private int ages;
@@ -19,7 +19,7 @@ public class Animals {
         System.out.println("Сон");
     }
 
-    public Animals(String location, String food, int ages, double whight) {
+    public Animal(String location, String food, int ages, double whight) {
         this.location = location;
         this.food = food;
         this.ages = ages;

@@ -10,7 +10,7 @@ import L8.task4.vet.Vet;
  */
 public class Main {
     public static void main(String[] args) {
-        Animals[] animals = {
+        Animal[] animals = {
                 new Cat("в доме.", "корм", 2, 2.5, "Муська", 5),
                 new Cat("в вартире.", "рыбу", 5, 3, "Кузя", 8),
                 new Cat("в доме.", "молоко", 12, 12, "Ленин", 3),
@@ -19,10 +19,8 @@ public class Main {
                 new Dog("в квартире.", "кость", 6, 9, "Арчебальд", 14.5),
                 new Horse("в сарае.", "овес", 15, 450, "Скакун", 300)
         };
-        for (Animals a : animals) {
+        for (Animal a : animals) {
             Vet.treatAnimal(a);
-
         }
     }
-
 }
