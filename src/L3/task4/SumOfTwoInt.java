@@ -11,7 +11,7 @@ public class SumOfTwoInt {
             return sc.nextInt();
         } else {
             System.out.println("Ошибка! Вы ввели не целое число!");
-            sc.nextLine();
+            System.exit(0);
             return 0;
         }
     }
