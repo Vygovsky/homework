@@ -16,6 +16,7 @@ public class Main {
                     System.out.println("Выводим площадь прямоугольника: " + shape.area());
                 }
             }
+            shape.draw();
         }
     }
 }

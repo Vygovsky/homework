@@ -4,7 +4,7 @@ package L10.task1;
  * Created by roman_v on 02.06.17.
  */
 public abstract class Shape {
-    String color;
+     private String color;
 
     abstract void draw();
 
@@ -23,5 +23,6 @@ public abstract class Shape {
     public void setColor(String color) {
         this.color = color;
     }
+
 
 }
