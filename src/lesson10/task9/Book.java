@@ -40,8 +40,6 @@ public class Book implements Printable {
 
     @Override
     public String toString() {
-        return "Book{" +
-            "name='" + name + '\'' +
-            '}';
+        return "Book{" + "name='" + name + '\'' + '}';
     }
 }
