@@ -1,15 +1,16 @@
-package L9.task1;
+package lesson9.task1;
 
 import lesson8.flowers.Flower;
 
 /**
  * Created by Roman_v on 05.06.2017.
  */
-public class Rose extends Flower {
-    public enum Brand {
-        WHITE(45),
-        BLUE(56),
-        BURGUNDY(50);
+public class Exotic extends Flower {
+
+    enum Brand {
+        PHALAENOPSIS(452.36),
+        SPREKELIA(556.89),
+        LITHOPS(1103);
 
         private double cost;
 
@@ -22,19 +23,19 @@ public class Rose extends Flower {
         }
     }
 
-    public Brand brand;
+    private Brand brand;
 
-    public Rose(String name, Brand brand) {
+    public Exotic(String name, Brand brand) {
         super(name);
         this.brand = brand;
     }
 
-    public Brand getBrand() {
+    public Brand getBrand3() {
         return brand;
     }
 
-    public void setBrand(Brand brand2) {
-        this.brand = brand2;
+    public void setBrand3(Brand brand) {
+        this.brand = brand;
     }
 
     @Override
@@ -48,9 +49,9 @@ public class Rose extends Flower {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        Rose rose = (Rose) o;
+        Exotic exotic = (Exotic) o;
 
-        return brand == rose.brand;
+        return brand == exotic.brand;
     }
 
     @Override
@@ -62,8 +63,8 @@ public class Rose extends Flower {
 
     @Override
     public String toString() {
-        return "Rose{" +
-            "brand=" + brand +
+        return "Exotic{" +
+            "brand3=" + brand +
             '}';
     }
 }

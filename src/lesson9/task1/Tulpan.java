@@ -1,16 +1,15 @@
-package L9.task1;
+package lesson9.task1;
 
 import lesson8.flowers.Flower;
 
 /**
  * Created by Roman_v on 05.06.2017.
  */
-public class Exotic extends Flower {
-
-    enum Brand {
-        PHALAENOPSIS(452.36),
-        SPREKELIA(556.89),
-        LITHOPS(1103);
+public class Tulpan extends Flower {
+    public enum Brand {
+        YELLOW(15),
+        RED(30),
+        PINK(45.33);
 
         private double cost;
 
@@ -25,22 +24,26 @@ public class Exotic extends Flower {
 
     private Brand brand;
 
-    public Exotic(String name, Brand brand) {
+    public Tulpan(String name, Brand brand) {
         super(name);
         this.brand = brand;
     }
 
-    public Brand getBrand3() {
+    public Tulpan(String name) {
+        super(name);
+    }
+
+    public Brand getBrand() {
         return brand;
     }
 
-    public void setBrand3(Brand brand) {
+    public void setBrand(Brand brand) {
         this.brand = brand;
     }
 
     @Override
     public double cost() {
-        return brand.cost;
+        return brand.getCost();
     }
 
     @Override
@@ -49,9 +52,9 @@ public class Exotic extends Flower {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        Exotic exotic = (Exotic) o;
+        Tulpan tulpan = (Tulpan) o;
 
-        return brand == exotic.brand;
+        return brand == tulpan.brand;
     }
 
     @Override
@@ -63,8 +66,8 @@ public class Exotic extends Flower {
 
     @Override
     public String toString() {
-        return "Exotic{" +
-            "brand3=" + brand +
+        return "Tulpan{" +
+            "brand=" + brand +
             '}';
     }
 }
