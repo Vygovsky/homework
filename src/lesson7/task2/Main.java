@@ -1,6 +1,4 @@
-package L7.task2;
-
-import java.util.Arrays;
+package lesson7.task2;
 
 /**
  * Created by Roman_v on 20.05.2017.

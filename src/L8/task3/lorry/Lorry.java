@@ -1,6 +1,6 @@
 package L8.task3.lorry;
 
-import L7.task4.com.company.vehicles.Car;
+import lesson7.task4.com.company.vehicles.Car;
 
 /**
  * Created by roman_v on 30.05.17.

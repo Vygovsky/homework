@@ -1,7 +1,7 @@
 package L8.task3;
 
-import L7.task4.com.company.detalis.Engine;
-import L7.task4.com.company.professions.Driver;
+import lesson7.task4.com.company.detalis.Engine;
+import lesson7.task4.com.company.professions.Driver;
 import L8.task3.lorry.Lorry;
 import L8.task3.sportcar.SportCar;
 

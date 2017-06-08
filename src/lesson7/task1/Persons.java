@@ -1,4 +1,4 @@
-package L7.task1;
+package lesson7.task1;
 
 /**
  * Created by roman_v on 19.05.17.

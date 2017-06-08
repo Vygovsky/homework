@@ -1,8 +1,8 @@
-package L7.task4;
+package lesson7.task4;
 
-import L7.task4.com.company.professions.Driver;
-import L7.task4.com.company.detalis.Engine;
-import L7.task4.com.company.vehicles.Car;
+import lesson7.task4.com.company.professions.Driver;
+import lesson7.task4.com.company.detalis.Engine;
+import lesson7.task4.com.company.vehicles.Car;
 
 /**
  * Created by roman_v on 22.05.17.

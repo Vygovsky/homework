@@ -1,4 +1,4 @@
-package L7.task4.com.company.professions;
+package lesson7.task4.com.company.professions;
 
 import L8.task3.person.Person;
 

@@ -1,4 +1,4 @@
-package L7.task2;
+package lesson7.task2;
 
 public class Matrix {
     private double[][] matrix;

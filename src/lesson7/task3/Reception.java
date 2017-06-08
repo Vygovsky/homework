@@ -1,4 +1,4 @@
-package L7.task3;
+package lesson7.task3;
 
 public class Reception {
     public static void main(String[] args) {
