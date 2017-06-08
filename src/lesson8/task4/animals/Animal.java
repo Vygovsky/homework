@@ -4,18 +4,20 @@ package lesson8.task4.animals;
  * Created by roman_v on 31.05.17.
  */
 public class Animal {
-    private  String location;
-    private  String food;
+    private String location;
+    private String food;
     private int ages;
     private double weight;
 
-    public void  makeNoise(){
+    public void makeNoise() {
         System.out.println(" Шум");
     }
-    public void toEat(){
+
+    public void toEat() {
         System.out.println("Еда");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("Сон");
     }
 
