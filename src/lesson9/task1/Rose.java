@@ -62,8 +62,6 @@ public class Rose extends Flower {
 
     @Override
     public String toString() {
-        return "Rose{" +
-            "brand=" + brand +
-            '}';
+        return "Rose{" + "brand=" + brand + '}';
     }
 }

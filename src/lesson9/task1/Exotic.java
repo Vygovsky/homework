@@ -63,8 +63,6 @@ public class Exotic extends Flower {
 
     @Override
     public String toString() {
-        return "Exotic{" +
-            "brand3=" + brand +
-            '}';
+        return "Exotic{" + "brand3=" + brand + '}';
     }
 }

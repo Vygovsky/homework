@@ -37,9 +37,7 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
-            "name='" + name + '\'' +
-            '}';
+        return "Flower{" + "name='" + name + '\'' + '}';
     }
 
     public static int getCount() {

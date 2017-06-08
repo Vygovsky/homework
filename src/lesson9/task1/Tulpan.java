@@ -66,8 +66,6 @@ public class Tulpan extends Flower {
 
     @Override
     public String toString() {
-        return "Tulpan{" +
-            "brand=" + brand +
-            '}';
+        return "Tulpan{" + "brand=" + brand + '}';
     }
 }
