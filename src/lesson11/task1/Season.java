@@ -4,7 +4,13 @@ package lesson11.task1;
  * Created by roman_v on 07.06.17.
  */
 enum Season {
-    WINTER(0), SPRING(10), SUMMER(23), AUTUMN(16);
+    WINTER(0),
+    SPRING(10),
+    SUMMER(23) {
+        public String getDescription() {
+            return "Теплое время года";
+        }
+    }, AUTUMN(16);
 
     Season(int temp) {
         this.temp = temp;
@@ -15,4 +21,8 @@ enum Season {
     }
 
     private int temp;
+
+    public String getDescription() {
+        return ("Холодное время года");
+    }
 }
