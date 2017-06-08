@@ -1,4 +1,4 @@
-package L4.task5;
+package lesson4.task5;
 import java.util.Scanner;
 /**
  * Создать программу, которая будет выводить на экран меньшее по модулю из трёх
