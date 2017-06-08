@@ -1,4 +1,4 @@
-package L56.task3;
+package lesson5_6.task3;
 import java.util.Random;
 /**
  * Реализовать подсчет факториала используя цикл for.

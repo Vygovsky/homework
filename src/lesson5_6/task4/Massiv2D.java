@@ -1,4 +1,4 @@
-package L56.task4;
+package lesson5_6.task4;
 /**
  * Created by roman_v on 16.05.17.
  */

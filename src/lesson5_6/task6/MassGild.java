@@ -1,4 +1,4 @@
-package L56.task6;
+package lesson5_6.task6;
 
 import java.util.Arrays;
 import java.util.Scanner;

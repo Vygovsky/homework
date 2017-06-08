@@ -1,5 +1,5 @@
-package L56.task2;
-import L56.task2.modul.MyBubbleSort;
+package lesson5_6.task2;
+import lesson5_6.task2.modul.MyBubbleSort;
 import java.util.Arrays;
 
 /**

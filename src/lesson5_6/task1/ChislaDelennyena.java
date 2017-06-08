@@ -1,4 +1,4 @@
-package L56.task1;
+package lesson5_6.task1;
 /**Распечатать все числа от 1 до 100, которые делятся на 5 без остатка. Используем цикл do-while.
  * Created by Roman_v on 15.05.2017.
  */

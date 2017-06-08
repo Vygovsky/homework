@@ -1,4 +1,4 @@
-package L56.task2.modul;
+package lesson5_6.task2.modul;
 public class MyBubbleSort {
     public static void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
