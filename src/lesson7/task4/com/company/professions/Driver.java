@@ -1,6 +1,6 @@
 package lesson7.task4.com.company.professions;
 
-import L8.task3.person.Person;
+import lesson8.task3.person.Person;
 
 /**
  * Created by roman_v on 22.05.17.

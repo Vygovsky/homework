@@ -1,4 +1,4 @@
-package L8.task3.person;
+package lesson8.task3.person;
 
 /**
  * Created by roman_v on 30.05.17.

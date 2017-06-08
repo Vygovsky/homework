@@ -1,6 +1,6 @@
 package L9.task1;
 
-import L8.flowers.Flower;
+import lesson8.flowers.Flower;
 
 /**
  * Created by Roman_v on 05.06.2017.

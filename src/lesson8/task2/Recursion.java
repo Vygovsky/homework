@@ -1,4 +1,4 @@
-package L8.task2;
+package lesson8.task2;
 /**
  * Created by Roman_v on 27.05.2017.
  */

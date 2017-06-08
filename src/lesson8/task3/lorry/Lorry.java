@@ -1,24 +1,24 @@
-package L8.task3.sportcar;
+package lesson8.task3.lorry;
 
 import lesson7.task4.com.company.vehicles.Car;
 
 /**
  * Created by roman_v on 30.05.17.
  */
-public class SportCar extends Car {
-    private double speed;
+public class Lorry extends Car {
+    private double carrying;
 
-    public SportCar(String nameCar, String mark, double weight, double speed) {
+    public Lorry(String nameCar, String mark, double weight, double carrying) {
         super(nameCar, mark, weight);
-        this.speed = speed;
+        this.carrying = carrying;
     }
 
-    public double getSpeed() {
-        return speed;
+    public double getCarrying() {
+        return carrying;
     }
 
-    public void setSpeed(double speed) {
-        this.speed = speed;
+    public void setCarrying(double carrying) {
+        this.carrying = carrying;
     }
 
     @Override
@@ -27,22 +27,24 @@ public class SportCar extends Car {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        SportCar sportCar = (SportCar) o;
+        Lorry lorry = (Lorry) o;
 
-        return Double.compare(sportCar.speed, speed) == 0;
+        return Double.compare(lorry.carrying, carrying) == 0;
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
         long temp;
-        temp = Double.doubleToLongBits(speed);
+        temp = Double.doubleToLongBits(carrying);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
     @Override
     public String toString() {
-        return "SportCar{" + super.toString() + "speed=" + speed + '}';
+        return "Lorry{" + super.toString() + "carrying=" + carrying + '}';
     }
 }
+
+

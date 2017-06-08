@@ -1,9 +1,9 @@
-package L8.task4.animals;
+package lesson8.task4.animals;
 
-import L8.task4.cat.Cat;
-import L8.task4.dog.Dog;
-import L8.task4.horse.Horse;
-import L8.task4.vet.Vet;
+import lesson8.task4.cat.Cat;
+import lesson8.task4.dog.Dog;
+import lesson8.task4.horse.Horse;
+import lesson8.task4.vet.Vet;
 
 /**
  * Created by roman_v on 31.05.17.

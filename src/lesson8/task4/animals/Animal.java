@@ -1,4 +1,4 @@
-package L8.task4.animals;
+package lesson8.task4.animals;
 
 /**
  * Created by roman_v on 31.05.17.
