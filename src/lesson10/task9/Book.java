@@ -1,18 +1,18 @@
-package L10.task9;
+package lesson10.task9;
 
 /**
  * Created by Roman_v on 03.06.2017.
  */
-public class Magazine implements Printable {
+public class Book implements Printable {
     private String name;
-
-    public Magazine(String name) {
-        this.name = name;
-    }
 
     @Override
     public void print() {
-        System.out.println("Печатается журнал \'" + getName() + '\'');
+        System.out.println("Печатается книга \'" + getName() + '\'');
+    }
+
+    public Book(String name) {
+        this.name = name;
     }
 
     public String getName() {
@@ -28,18 +28,20 @@ public class Magazine implements Printable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Magazine magazine = (Magazine) o;
+        Book book = (Book) o;
 
-        return name.equals(magazine.name);
-    }
-
-    @Override
-    public String toString() {
-        return "Magazine{" + "name='" + name + '\'' + '}';
+        return name.equals(book.name);
     }
 
     @Override
     public int hashCode() {
         return name.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+            "name='" + name + '\'' +
+            '}';
     }
 }

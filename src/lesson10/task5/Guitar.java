@@ -1,4 +1,4 @@
-package L10.task5;
+package lesson10.task5;
 
 public class Guitar implements Tool {
     private int stringNumber;
