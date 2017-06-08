@@ -1,4 +1,4 @@
-package L3.task2;
+package lesson3.task2;
 /**
  * Created by Roman_v on 22.05.2017.
  */

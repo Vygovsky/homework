@@ -1,4 +1,4 @@
-package L3.task3;
+package lesson3.task3;
 
 /**
  * Created by Roman_v on 22.05.2017.
