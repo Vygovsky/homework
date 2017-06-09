@@ -29,10 +29,9 @@ public class DemoSeason {
         }
         for (Season s : Season.values()) {
             System.out.println(s + " " + s.getTemp());
-            s.getTemp();
+            season.getDescription();
         }
         System.out.println();
-
         season = Season.valueOf("WINTER");
         System.out.println("Мой любимый сезон " + season);
     }
