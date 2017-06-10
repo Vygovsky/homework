@@ -88,6 +88,6 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Рисую прямоугольник");
+        System.out.println("Рисую прямоугольник.");
     }
 }

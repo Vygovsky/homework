@@ -79,7 +79,7 @@ public class Circle extends Shape {
 
     @Override
     void draw() {
-        System.out.println("Рисую круг");
+        System.out.println("Рисую круг.");
     }
 }
 
