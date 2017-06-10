@@ -13,7 +13,8 @@ public class Rectangle extends Shape {
         return high * width;
     }
 
-    public Rectangle(double top, double left, double high, double width) {
+    public Rectangle(double top, double left, double high, double width, String color) {
+        super(color);
         this.top = top;
         this.left = left;
         this.high = high;

@@ -4,7 +4,7 @@ package lesson10.task1;
  * Created by roman_v on 02.06.17.
  */
 public abstract class Shape {
-     private String color;
+    private String color;
 
     abstract void draw();
 
@@ -12,7 +12,7 @@ public abstract class Shape {
         return 0;
     }
 
-    public Shape() {
+    public Shape(String color) {
         this.color = color;
     }
 

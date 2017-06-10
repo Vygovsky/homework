@@ -8,7 +8,6 @@ public class Circle extends Shape {
     private double y;
     private double radius;
 
-
     public double lengthCircle() {
         return 2 * Math.PI * radius;
     }
@@ -17,7 +16,8 @@ public class Circle extends Shape {
         return Math.PI * radius * radius;
     }
 
-    public Circle(double x, double y, double radius) {
+    public Circle(double x, double y, double radius, String color) {
+        super(color);
         this.x = x;
         this.y = y;
         this.radius = radius;
