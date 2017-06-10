@@ -30,11 +30,11 @@ public class Exotic extends Flower {
         this.brand = brand;
     }
 
-    public Brand getBrand3() {
+    public Brand getBrand() {
         return brand;
     }
 
-    public void setBrand3(Brand brand) {
+    public void setBrand(Brand brand) {
         this.brand = brand;
     }
 
