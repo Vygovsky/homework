@@ -1,6 +1,6 @@
 package lesson8.task4.vet;
 
-        import lesson8.task4.animals.Animal;
+import lesson8.task4.animals.Animal;
 
 /**
  * Created by student on 5/31/2017.
