@@ -6,8 +6,6 @@ package lesson11.task1;
 public class DemoSeason {
     public static void main(String[] args) {
         Season season = Season.WINTER;
-        Season temp = Season.WINTER;
-        temp.getTemp();
 
         switch (season) {
             case WINTER: {
@@ -27,9 +25,10 @@ public class DemoSeason {
                 break;
             }
         }
+
         for (Season s : Season.values()) {
             System.out.println(s + " " + s.getTemp());
-            season.getDescription();
+            s.getDescription();
         }
         System.out.println();
         season = Season.valueOf("WINTER");

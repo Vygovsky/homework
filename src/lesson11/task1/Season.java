@@ -4,11 +4,9 @@ package lesson11.task1;
  * Created by roman_v on 07.06.17.
  */
 enum Season {
-    WINTER(0),
-    SPRING(10),
-    SUMMER(23) {
-        public String getDescription() {
-            return "Теплое время года";
+    WINTER(0), SPRING(10), SUMMER(23) {
+        public void getDescription() {
+            System.out.println("Теплое время года");
         }
     }, AUTUMN(16);
 
@@ -22,7 +20,12 @@ enum Season {
 
     private int temp;
 
-    public String getDescription() {
-        return ("Холодное время года");
+    public void getDescription() {
+        System.out.println("Холодное время года");
+    }
+
+    @Override
+    public String toString() {
+        return "Season{" + "temp=" + temp + '}';
     }
 }
