@@ -23,9 +23,4 @@ enum Season {
     public void getDescription() {
         System.out.println("Холодное время года");
     }
-
-    @Override
-    public String toString() {
-        return "Season{" + "temp=" + temp + '}';
-    }
 }
