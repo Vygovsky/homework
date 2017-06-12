@@ -4,21 +4,21 @@ package lesson11.task2;
  * Created by roman_v on 08.06.17.
  */
 public abstract class Clothes {
-    private int sizeClothes;
+    private Size sizeClothes;
     private double cost;
     private String color;
 
-    public Clothes(int sizeClothes, double cost, String color) {
+    public Clothes(Size sizeClothes, double cost, String color) {
         this.sizeClothes = sizeClothes;
         this.cost = cost;
         this.color = color;
     }
 
-    public int getSizeClothes() {
+    public Size getSizeClothes() {
         return sizeClothes;
     }
 
-    public void setSizeClothes(int sizeClothes) {
+    public void setSizeClothes(Size sizeClothes) {
         this.sizeClothes = sizeClothes;
     }
 
@@ -45,8 +45,8 @@ public abstract class Clothes {
 
         Clothes clothes = (Clothes) o;
 
-        if (sizeClothes != clothes.sizeClothes) return false;
         if (Double.compare(clothes.cost, cost) != 0) return false;
+        if (sizeClothes != clothes.sizeClothes) return false;
         return color.equals(clothes.color);
     }
 
@@ -54,7 +54,7 @@ public abstract class Clothes {
     public int hashCode() {
         int result;
         long temp;
-        result = sizeClothes;
+        result = sizeClothes.hashCode();
         temp = Double.doubleToLongBits(cost);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + color.hashCode();

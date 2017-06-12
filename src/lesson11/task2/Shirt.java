@@ -5,7 +5,7 @@ package lesson11.task2;
  */
 public class Shirt extends Clothes implements MenClothes, WomenClothes {
 
-    public Shirt(int sizeClothes, double cost, String color) {
+    public Shirt(Size sizeClothes, double cost, String color) {
         super(sizeClothes, cost, color);
     }
 
