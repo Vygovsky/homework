@@ -39,12 +39,32 @@ public abstract class Fruit {
     public static double getCount() {
         return count;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Fruit fruit = (Fruit) o;
+
+        if (Double.compare(fruit.cost, cost) != 0) return false;
+        return name.equals(fruit.name);
+    }
+
+    @Override
+    public String toString() {
+        return "Fruit{" + "name='" + name + '\'' + ", cost=" + cost + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name.hashCode();
+        temp = Double.doubleToLongBits(cost);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 }
 
 
-   /* Фруктовая лавка. Создать абстрактный класс Фрукт и классы Яблоко, Груша, Абрикос расширяющие его.
-    Класс Фрукт содержит завершенный метод printManufacturerInfo(){System.out.print("Made in Ukraine");}
-    и метод, возвращающий стоимость фрукта, который должен быть переопределен в каждом классе наследнике.
-    Создать несколько объектов разных классов. Подсчитать общую стоимость проданных фруктов.
-    А также общую стоимость отдельно проданных яблок, груш и абрикос (используем статические переменные, методы).
-    */
