@@ -17,6 +17,7 @@ public class Main {
         };
         Studio studio = new Studio();
         studio.clotheMan(clothes);
+        System.out.println();
         studio.clotheWomen(clothes);
     }
 }
