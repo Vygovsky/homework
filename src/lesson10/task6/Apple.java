@@ -6,8 +6,8 @@ package lesson10.task6;
 public class Apple extends Fruit {
     private String name;
 
-    public Apple(String sortName, double cost) {
-        super(sortName, cost);
+    public Apple(String name, double cost) {
+        super(name, cost);
     }
 
     @Override

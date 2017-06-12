@@ -4,20 +4,22 @@ package lesson10.task6;
  * Created by Roman_v on 05.06.2017.
  */
 public abstract class Fruit {
-    private String sortName;
+    private String name;
     private double cost;
+    private static double count;
 
     public Fruit(String sortName, double cost) {
-        this.sortName = sortName;
+        this.name = sortName;
         this.cost = cost;
+        count++;
     }
 
-    public String getSortName() {
-        return sortName;
+    public String getName() {
+        return name;
     }
 
-    public void setSortName(String sortName) {
-        this.sortName = sortName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setCost(double cost) {
@@ -32,6 +34,10 @@ public abstract class Fruit {
 
     public double getCost() {
         return cost;
+    }
+
+    public static double getCount() {
+        return count;
     }
 }
 
