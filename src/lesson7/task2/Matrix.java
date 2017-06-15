@@ -1,5 +1,7 @@
 package lesson7.task2;
 
+import java.util.Arrays;
+
 public class Matrix {
     private double[][] matrix;
     private int rowsNum;
@@ -75,6 +77,35 @@ public class Matrix {
                 this.setElement(i, j, this.getElement(i, j) * d);
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Matrix matrix1 = (Matrix) o;
+
+        if (rowsNum != matrix1.rowsNum) return false;
+        if (colunsNum != matrix1.colunsNum) return false;
+        return Arrays.deepEquals(matrix, matrix1.matrix);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Arrays.deepHashCode(matrix);
+        result = 31 * result + rowsNum;
+        result = 31 * result + colunsNum;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Matrix{" +
+            "matrix=" + Arrays.toString(matrix) +
+            ", rowsNum=" + rowsNum +
+            ", colunsNum=" + colunsNum +
+            '}';
     }
 }
 
