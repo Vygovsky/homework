@@ -36,6 +36,20 @@ public class Main {
             pearCost += fruit.cost();
         }
         System.out.println("Стоимость груш "+pearCost);
-        System.out.println("Стоимость всех фруктов "+(appleCost+apricCost+pearCost));
+
+    Fruit[]fruits={
+            new Apple(" Лигольд", 23),
+            new Apple(" Белый налив", 13.50),
+            new Apricot("Цунами", 55.30),
+            new Apricot("Ледана", 56.90),
+            new Pear("Вильямс", 70.50),
+            new Pear("Велеса", 55)};
+        double getCount=0;
+        for (Fruit fruit : fruits) {
+            getCount+=fruit.cost();
+        }
+        System.out.println("Стоимость всех фруктов "+getCount);
     }
+
 }
+
