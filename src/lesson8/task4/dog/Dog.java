@@ -40,4 +40,30 @@ public class Dog extends Animal {
     public void toEat() {
         System.out.println(getFood());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Dog dog = (Dog) o;
+
+        if (Double.compare(dog.biteForce, biteForce) != 0) return false;
+        return name.equals(dog.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name.hashCode();
+        temp = Double.doubleToLongBits(biteForce);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" + "name='" + name + '\'' + ", biteForce=" + biteForce + '}';
+    }
 }
