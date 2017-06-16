@@ -6,9 +6,20 @@ package lesson12.task3;
 public class SubString {
     public static void main(String[] args) {
         String s = new String("No description, website, or topics provided");
+
+        //   int start = s.length() / 2 - 1;
+        // int end = start + 2;
+        //System.out.println(s.substring(start, end));
+       // getRpo(s.substring(start,end));
+    }
+
+    public static void getRpo(String s) {
         int start = s.length() / 2 - 1;
         int end = start + 2;
-        System.out.println(s.substring(start, end));
+        System.out.println(s);
+
+
+
     }
 }
 
