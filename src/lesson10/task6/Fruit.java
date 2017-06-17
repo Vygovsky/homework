@@ -6,7 +6,7 @@ package lesson10.task6;
 public abstract class Fruit {
     private String name;
     private double cost;
-    private static double count;
+    private static int count;
 
     public Fruit(String sortName, double cost) {
         this.name = sortName;
@@ -36,7 +36,7 @@ public abstract class Fruit {
         return cost;
     }
 
-    public static double getCount() {
+    public static int getCount() {
         return count;
     }
 
