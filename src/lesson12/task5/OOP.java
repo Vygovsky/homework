@@ -19,6 +19,6 @@ public class OOP {
     }
 
     public static String getOOP(String s) {
-        return s.replaceAll("(?i)object[-\\s]*oriented[-\\s]*programming", "OOP");
+        return s.replaceAll("(?i)object[-\\s]*oriented[\\s]+programming", "OOP");
     }
 }
