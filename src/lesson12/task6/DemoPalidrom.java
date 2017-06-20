@@ -8,14 +8,12 @@ public class DemoPalidrom {
         String str =" 123 324 111 4554";
         String[] numb=str.split(" ");
         for (String number:numb) {
-            StringBuffer sb=new StringBuffer("123 324 111 4554");
+            StringBuilder sb=new StringBuilder("123 324 111 4554");
             sb.reverse();
-            System.out.println(sb.toString());
-
-
-
+            if(number.equals(sb.toString())){
+                System.out.println(number);
+            }
         }
-
     }
 }
 
