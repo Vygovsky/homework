@@ -5,12 +5,12 @@ package lesson12.task6;
  */
 public class DemoPalidrom {
     public static void main(String[] args) {
-        String str =" 123 324 111 4554";
-        String[] numb=str.split(" ");
-        for (String number:numb) {
-            StringBuilder sb=new StringBuilder("123 324 111 4554");
+        String str = "123 324 111 4554";
+        String[] numb = str.split(" ");
+        for (String number : numb) {
+            StringBuilder sb = new StringBuilder(number);
             sb.reverse();
-            if(number.equals(sb.toString())){
+            if (number.equals(sb.toString())) {
                 System.out.println(number);
             }
         }
