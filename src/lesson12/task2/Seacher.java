@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  * Created by Roman_v on 17.06.2017.
  */
 public class Seacher {
-    private static List<String> words=new ArrayList<>();
+    private static List<String> words = new ArrayList<>();
 
     public static List<String> getWords() {
         return words;
@@ -22,7 +22,7 @@ public class Seacher {
     public static List<String> words(String s, String regex) {
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(s);
-        while (m.find()){
+        while (m.find()) {
             words.add(s.substring(m.start(), m.end()));
         }
         return words;
