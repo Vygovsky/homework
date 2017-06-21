@@ -5,9 +5,9 @@ package lesson12.task4;
  */
 public class Employee {
     private String fullName;
-    private String salary;
+    private double salary;
 
-    public Employee(String fullName, String salary) {
+    public Employee(String fullName, double salary) {
         this.fullName = fullName;
         this.salary = salary;
     }
@@ -20,12 +20,11 @@ public class Employee {
         this.fullName = fullName;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
-
 }
