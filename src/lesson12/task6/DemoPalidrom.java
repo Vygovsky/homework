@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class DemoPalidrom {
     public static void main(String[] args) {
         String str = "Если есть хвосты по дз, начните с 1 не сданного задания. 123 324 111 4554";
-        str=getNumb(str).trim();
+        str = getNumb(str).trim();
         System.out.println(str);
         System.out.println();
         String[] numb = str.split("\\s+");
@@ -24,9 +24,10 @@ public class DemoPalidrom {
             }
         }
     }
-    public static String getNumb(String str){
-        String s= str.replaceAll("[A-Za-zА-Яа-я,.]","");
-        return  s;
+
+    public static String getNumb(String str) {
+        String s = str.replaceAll("[A-Za-zА-Яа-я,.]", "");
+        return s;
     }
 }
 
