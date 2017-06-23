@@ -1,6 +1,6 @@
-package lesson18.task1.task2;
+package lesson18.task2;
 
-import lesson18.task1.task1.User;
+import lesson18.task1.User;
 
 /**
  * Created by UITS-Admin on 21.06.2017.
