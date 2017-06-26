@@ -9,8 +9,8 @@ public class DemoEmpoloyee {
 
         Employee[] employees = {
                 new Employee("Маркович Андрей Николаевич", 1500.0),
-                new Employee("Маркович Андрей Николаевич", 1500.0),
-                new Employee("Маркович Андрей Николаевич", 1500.0)
+                new Employee("Чегис Антон Николаевич", 1500.0),
+                new Employee("Жолонский Андрей Романович", 1500.0)
         };
         Report.generateReport(employees);
     }
