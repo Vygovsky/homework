@@ -12,6 +12,5 @@ public class User {
             System.out.println("login: "+login);
             System.out.println("password: "+password);
         }
-
     }
 }
