@@ -16,7 +16,6 @@ public class User {
             System.out.println("login: "+login);
             System.out.println("password: "+password);
         }
-
     }
     public static void main(String[] args) {
         User user=new User();
