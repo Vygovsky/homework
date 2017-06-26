@@ -15,16 +15,16 @@ public class MinNumbString {
         while (m.find()) {
             words.add(l.substring(m.start(), m.end()));
         }
-        print(words);
+        printInfo(words);
     }
 
-    public static void print(Set<String> words) {
+    public static void printInfo(Set<String> words) {
         for (String word : words) {
             System.out.println(word);
         }
     }
 
-    public static void letter(Set<String> words) {
+    public static void getLetter(Set<String> words) {
         Set<Character> letters = new HashSet<>();
         for (String word : words) {
             String s = word.toLowerCase();
