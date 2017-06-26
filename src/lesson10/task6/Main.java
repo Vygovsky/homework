@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
         Fruit[] fruits = {
-                new Apple(" Лигольд", 23),
-                new Apple(" Белый налив", 13.50),
-                new Apricot("Цунами", 55),
-                new Apricot("Ледана", 56),
-                new Pear("Вильямс", 70.50),
-                new Pear("Велеса", 55)};
+            new Apple(" Лигольд", 23),
+            new Apple(" Белый налив", 13.50),
+            new Apricot("Цунами", 55),
+            new Apricot("Ледана", 56),
+            new Pear("Вильямс", 70.50),
+            new Pear("Велеса", 55)};
 
         System.out.println("Всего продано " + Fruit.getCount() + " фруктов. Стоимость всех фруктов " + totalCost(fruits));
         System.out.println("Всего продано " + Apple.getCount() + " яблок. Стоимость проданых яблок " + applesTotalCost(fruits));

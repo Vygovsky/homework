@@ -6,7 +6,7 @@ package lesson12.task3;
 public class SubString {
     public static void main(String[] args) {
         String s = new String("No description, website, or topics provided.");
-        String s1=new String("Опубликовано");
+        String s1 = "Опубликовано";
         System.out.println(getRpo(s));
         System.out.println(getRpo(s1));
     }
