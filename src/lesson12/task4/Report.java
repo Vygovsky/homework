@@ -9,10 +9,7 @@ public class Report {
     public static void generateReport(Employee[] employees) {
         System.out.printf("%-30s    %-10s    %s\n", "Имя",  "зарплата", "дата ");
         for (Employee employee : employees) {
-            System.out.printf("%-30s    %-10s    ", employee.getFullName(), employee.getSalary());
-            System.out.printf("%1$s %2$tB %2$td, %2$tY\n", "Дата:", new Date());
-
-
+            System.out.printf("%-30s    %-10s    %s %4$tB %4$td, %4$tY\n", employee.getFullName(), employee.getSalary(), "Дата:", new Date());
         }
     }
 }
