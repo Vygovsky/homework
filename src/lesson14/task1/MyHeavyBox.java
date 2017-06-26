@@ -16,4 +16,11 @@ public class MyHeavyBox {
     public void setHeavyBox(int heavyBox) {
         this.deep = heavyBox;
     }
+
+    @Override
+    public String toString() {
+        return "MyHeavyBox{" +
+            "deep=" + deep +
+            '}';
+    }
 }
