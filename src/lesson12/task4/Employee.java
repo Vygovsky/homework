@@ -10,7 +10,7 @@ public class Employee {
     private double salary;
     private Date salaryDate;
 
-    public Employee(String fullName, double salary) {
+    public Employee(String fullName, double salary, Date salaryDate) {
         this.fullName = fullName;
         this.salary = salary;
         this.salaryDate=salaryDate;
