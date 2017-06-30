@@ -20,13 +20,6 @@ public class MinNumbString {
         System.out.println(getWord(words));
     }
 
-    public static void printInfo(Set<String> words) {
-        for (String word : words) {
-            System.out.println(word);
-            System.out.print(getNumbChar(word));
-        }
-    }
-
     public static int getNumbChar(String word) {
         Set<Character> letters = new HashSet<>();
         String s = word.toLowerCase();
@@ -41,7 +34,8 @@ public class MinNumbString {
         int charNumb = Integer.MAX_VALUE;
         for (String word : words) {
             int j = getNumbChar(word);
-            if (j<charNumb) {
+            if (j < charNumb) {
+                charNumb = j;
                 res = word;
             }
         }
