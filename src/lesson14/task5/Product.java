@@ -22,7 +22,7 @@ public class Product {
         this.name = name;
     }
 
-    public double getCost() {
+    public Double getCost() {
         return cost;
     }
 

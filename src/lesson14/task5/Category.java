@@ -1,14 +1,13 @@
 package lesson14.task5;
 
 import java.util.SortedSet;
-import java.util.TreeSet;
 
 /**
  * Created by roman_v on 30.06.17.
  */
 public class Category {
     private String name;
-   SortedSet<Product> products=new TreeSet<>();
+   SortedSet<Product> products;
 
 
     public Category(String name, SortedSet<Product> products) {
