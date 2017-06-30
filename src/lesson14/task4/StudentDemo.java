@@ -16,13 +16,18 @@ public class StudentDemo {
         stud.add(new Student("Ломакина Юлия Владимировна", 5));
         stud.add(new Student("Гунько Марина Романовна", 1));
         stud.add(new Student("Суркис Маским Петрович", 2));
+        getstuds((List<Student>) stud, 2);
+    }
 
+    public static void getstuds(List<Student> stud, int st) {
         Iterator<Student> std = stud.iterator();
         while (std.hasNext()) {
             Student element = std.next();
-            System.out.println(element + " ");
+            int st2 = element.getCourse();
+            if (st == st2) {
+                System.out.println(element);
+            }
         }
-        System.out.println();
     }
 }
 
