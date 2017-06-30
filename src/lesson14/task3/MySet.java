@@ -8,27 +8,29 @@ package lesson14.task3;
  */
 public class MySet {
     public static void main(String[] args) {
-        Set<Integer> union = new HashSet<>();
-        Set<Integer> intersect = new HashSet<>();
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+        Set<Integer> set3 = new HashSet<>();
+        Set<Integer> set4 = new HashSet<>();
 
-        union.add(2);
-        union.add(3);
-        union.add(22);
-        union.add(5);
-        union.add(19);
-        union.add(94);
-        union.add(2);
+       set1.add(6);
+       set1.add(8);
+       set1.add(20);
+       set1.add(2);
+       set3.add(6);
+       set3.add(6);
+       set3.add(91);
+       set3.add(59);
 
-        intersect.add(3);
-        intersect.add(22);
-        intersect.add(60);
-        intersect.add(52);
-        intersect.add(2);
 
-        union.removeAll(intersect);
-        System.out.println(union);
 
-        union.addAll(intersect);
-        System.out.println(union);
+
     }
+    public static Set<Iterable> union (Set<Integer>set1,Set<Integer>set2){
+     return set1.addAll(set2);
+    }
+    public static Set<Iterable> intersect (Set<Integer>set3,Set<Integer>set4){
+        return set3.retainAll(set4);
+    }
+
 }
