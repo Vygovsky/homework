@@ -19,9 +19,9 @@ public class MySet {
         set1.add(2);
         set3.add(6);
         set3.add(6);
-        set3.add(91);
+        set3.add(16);
         set3.add(59);
-     //  union(set1).size();
+        System.out.println(union(set1,set2));
         set2.add(1);
         set2.add(26);
         set2.add(9);
@@ -35,7 +35,7 @@ public class MySet {
         set4.add(9);
         set4.add(129);
         set4.add(1111);
-    //    intersect()
+        System.out.println(intersect(set3,set4));
     }
 
     public static Set<Integer> union(Set<Integer> set1, Set<Integer> set2) {
