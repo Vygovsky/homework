@@ -19,7 +19,7 @@ public class Seacher {
         return words.size();
     }
 
-    public static List<String> words(String s, String regex) {
+    public static List<String> getWords(String s, String regex) {
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(s);
         while (m.find()) {
@@ -27,5 +27,4 @@ public class Seacher {
         }
         return words;
     }
-
 }
