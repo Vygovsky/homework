@@ -8,7 +8,6 @@ import java.util.Comparator;
 public class ProdRatingComporator implements Comparator<Product> {
     @Override
     public int compare(Product o1, Product o2) {
-        int rating = o1.getRating().compareTo(o2.getRating());
-        return rating != 0 ? rating : 1;
+        return o1.getRating() >= o2.getRating() ? 1 : -1;
     }
 }
