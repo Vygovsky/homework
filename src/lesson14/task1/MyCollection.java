@@ -17,7 +17,7 @@ public class MyCollection {
         arrayList1.add(new MyHeavyBox());
         arrayList1.add(new MyHeavyBox());
         for (MyHeavyBox hb : arrayList1) {
-            System.out.println("Res myHeavyBox "+hb);
+            System.out.println("Res myHeavyBox " + hb);
         }
     }
 }
