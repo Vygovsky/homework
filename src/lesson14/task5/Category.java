@@ -7,8 +7,7 @@ import java.util.SortedSet;
  */
 public class Category {
     private String name;
-   SortedSet<Product> products;
-
+    SortedSet<Product> products;
 
     public Category(String name, SortedSet<Product> products) {
         this.name = name;

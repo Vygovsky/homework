@@ -27,7 +27,6 @@ public class ProductDemo {
         System.out.printf("%-25S    %-10S    %S\n", "Товар", "Цена", "Рейтинг ");
         for (Product element : products) {
             System.out.printf("%-25s    %-10S    %s\n", element.getName(), element.getCost(), element.getRating());
-
         }
         System.out.println();
         products1.add(new Product("Рубашка", 125.35, 1));
@@ -58,7 +57,6 @@ public class ProductDemo {
         System.out.printf("%-25S    %-10S    %S\n", "Товар", "Цена", "Рейтинг ");
         for (Product element2 : products2) {
             System.out.printf("%-25s    %-10S    %s\n", element2.getName(), element2.getCost(), element2.getRating());
-
         }
     }
 }
