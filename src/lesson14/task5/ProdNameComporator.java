@@ -7,7 +7,7 @@ import java.util.Comparator;
  */
 public class ProdNameComporator implements Comparator<Product> {
     @Override
-    public String compare(Product o1, Product o2) {
+    public int compare(Product o1, Product o2) {
         return o1.getName().compareTo(o2.getName());
     }
 }
