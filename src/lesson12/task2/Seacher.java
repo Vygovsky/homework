@@ -11,10 +11,6 @@ import java.util.regex.Pattern;
 public class Seacher {
     private static List<String> words = new ArrayList<>();
 
-    public static List<String> getWords() {
-        return words;
-    }
-
     public static int numberOfWords() {
         return words.size();
     }
