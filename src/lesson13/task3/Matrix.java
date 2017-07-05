@@ -67,7 +67,7 @@ public class Matrix <T extends Number>{
     public void multiply(double d) {
         for (int i = 0; i < getRowsNum(); i++) {
             for (int j = 0; j < getColunsNum(); j++) {
-                this.setElement(i, j, this.getElement(i, j) * d);
+                //this.setElement(i, j, this.getElement(i, j) * d);
             }
         }
     }
