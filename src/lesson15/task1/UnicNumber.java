@@ -11,13 +11,13 @@ public class UnicNumber {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         if(sc.hasNext()){
-            String[] numbers = sc.nextLine().split("\\s");
+            String[] numbers = sc.nextLine().split("[\\s,]+");
             Set<String> num=new HashSet<>();
             for (String number : numbers) {
                 num.add(number);
             }
             for (String s : num) {
-                System.out.println(s);
+                System.out.print(s+" ");
             }
         }
 
