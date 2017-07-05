@@ -10,7 +10,7 @@ public class MinMax <T extends Number> {
         this.arr = arr;
     }
 
-    public  double average(){
+    public  double minNumb(){
         T min=arr[0];
         for (T i:arr) {
         if(i.doubleValue()<min.doubleValue()){}
@@ -18,7 +18,7 @@ public class MinMax <T extends Number> {
         }
         return min.doubleValue();
         }
-    public  double average2(){
+    public  double maxNumb(){
         T max=arr[0];
         for (T i:arr) {
             if(i.doubleValue()>max.doubleValue()){}
