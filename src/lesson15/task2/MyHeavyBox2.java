@@ -3,16 +3,18 @@ package lesson15.task2;
 /**
  * Created by UITS-Admin on 05.07.2017.
  */
-public class MyHeavyBox {
-    private int deep;
+public class MyHeavyBox2 {
+    private double weight;
 
-    public MyHeavyBox() {
+    public MyHeavyBox2(double weight) {
+        this.weight = weight;
     }
 
-    public double getDeep() {
-        return deep;
+    public double getWeight() {
+        return weight;
     }
 
-    public void setDeep(int heavyBox) {
-        this.deep = heavyBox;
+    public void setWeight(double heavyBox) {
+        this.weight = heavyBox;
     }
+}
