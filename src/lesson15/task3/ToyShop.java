@@ -17,7 +17,6 @@ public class ToyShop {
         Set<String> set2 = toys.keySet();
         for (String toy2 : set2) {
             System.out.println(toy2);
-
         }
         System.out.println();
         Set<Map.Entry<String, Double>> set = toys.entrySet();
