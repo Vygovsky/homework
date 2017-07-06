@@ -1,4 +1,5 @@
 package lesson15.task3;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -16,7 +17,7 @@ public class ToyShop {
 
         Set<String> set2 = toys.keySet();
         for (String toy2 : set2) {
-            System.out.println(toy2);
+            System.out.println(toy2 + " " + toys.get(toy2));
         }
         System.out.println();
         Set<Map.Entry<String, Double>> set = toys.entrySet();
