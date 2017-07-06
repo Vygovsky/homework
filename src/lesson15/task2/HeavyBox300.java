@@ -15,18 +15,20 @@ public class HeavyBox300 {
         arrayBox.add(new MyHeavyBox2(290));
         arrayBox.add(new MyHeavyBox2(900));
         arrayBox.add(new MyHeavyBox2(800));
-        System.out.println(getHeavyBoxes2(arrayBox2));
+        System.out.println(arrayBox);
+        System.out.println(getHeavyBoxes2(arrayBox));
+        System.out.println(arrayBox);
     }
 
     public static List<MyHeavyBox2> getHeavyBoxes2(List<MyHeavyBox2> arrBox) {
         List<MyHeavyBox2> arrayBox2 = new ArrayList<>();
         Iterator<MyHeavyBox2> iterator = arrBox.iterator();
-        while (iterator.hasNext()) ;
-        MyHeavyBox2 elem = iterator.next();
-        System.out.println(elem + "  ");
-        if (elem.getWeight() > 300) {
-            arrayBox2.add(elem);
-            iterator.remove();
+        while (iterator.hasNext()) {
+            MyHeavyBox2 elem = iterator.next();
+            if (elem.getWeight() > 300) {
+                arrayBox2.add(elem);
+                iterator.remove();
+            }
         }
         return arrayBox2;
     }
