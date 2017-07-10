@@ -1,7 +1,5 @@
 package lesson15.task4;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
-
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -13,9 +11,9 @@ public class Teacher {
     public static void formTabel(Student student, boolean isFill) {
         for (Subject o : Subject.values()) {
             if (o.getCourses().contains(student.getCourse())) {
-                if(isFill){
+                if (isFill) {
                     student.getMap().put(o, (int) (Math.round(Math.random() * 3 + 2)));
-                }else {
+                } else {
                     student.getMap().put(o, 0);
                 }
             }
@@ -39,11 +37,11 @@ public class Teacher {
             if (isRemoved(student)) {
                 iter.remove();
             } else {
-                if (student.getCourse()<5){
+                if (student.getCourse() < 5) {
                     student.setCourse(student.getCourse() + 1);
                     student.getMap().clear();
-                    formTabel(student,false);
-                }else {
+                    formTabel(student, false);
+                } else {
                     student.setCourse(-1);
                 }
             }

@@ -10,13 +10,13 @@ public class Student {
     private String name;
     private int course;
     private String group;
-    Map<Subject,Integer> map;
+    Map<Subject, Integer> map;
 
     public Student(String name, int course, String group) {
         this.name = name;
         this.course = course;
         this.group = group;
-        map=new HashMap<>();
+        map = new HashMap<>();
     }
 
     public Map<Subject, Integer> getMap() {
@@ -71,11 +71,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-            "name='" + name + '\'' +
-            ", course=" + course +
-            ", group='" + group + '\'' +
-            ", map=" + map +
-            '}';
+        return "Student{" + "name='" + name + '\'' + ", course=" + course + ", group='" + group + '\'' + ", map=" + map + '}';
     }
 }
