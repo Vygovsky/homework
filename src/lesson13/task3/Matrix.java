@@ -64,12 +64,14 @@ public class Matrix <T extends Number>{
         return null;
     }
 
-    public void multiply(double d) {
+    public Matrix multiply(Matrix m) {
+        Double[][] md=new Double[rowsNum][colunsNum];
         for (int i = 0; i < getRowsNum(); i++) {
             for (int j = 0; j < getColunsNum(); j++) {
-                //this.setElement(i, j, this.getElement(i, j) * d);
+                md[i][j]=matrix[i][j].doubleValue()*m.getMatrix()[i][j].doubleValue();
             }
         }
+        return new Matrix(md);
     }
 
     @Override
