@@ -5,7 +5,7 @@ import java.io.File;
 public class DirList {
     public static void main(String args[]) {
         File catalog = new File("src");
-        printInfo(catalog," ");
+        printInfo(catalog, " ");
     }
 
     private static void printInfo(File file, String emptyString) {
