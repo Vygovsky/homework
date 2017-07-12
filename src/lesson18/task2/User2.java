@@ -1,14 +1,12 @@
 package lesson18.task2;
 
-import lesson18.task1.User;
-
 /**
  * Created by UITS-Admin on 21.06.2017.
  */
 public class User2 {
     private String login="Makar";
     private String password="115872";
-    public void createQuery(){
+    public  void createQuery(){
          class Query{
             public void printToLog(){
                 System.out.println("User is "+User2.this);
@@ -21,11 +19,16 @@ public class User2 {
     };
 
     public static void main(String[] args) {
-        User user=new User();
-        User.Query query= user.new Query();
-        //  User.Query query1=
+        User2 user=new User2();
         user.createQuery();
-        query.printToLog();
+    }
+
+    @Override
+    public String toString() {
+        return "User2{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
 
