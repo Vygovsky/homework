@@ -9,7 +9,7 @@ public class MinMaxDemo {
         Double[] dNumb = new Double[]{22.6, 229.3, -6.5, 0.63};
         MinMax<Integer> minMax1 = new MinMax<>(intNumb);
         MinMax<Double> minMax2 = new MinMax<>(dNumb);
-        System.out.println(minMax1.minNumb());
-        System.out.println(minMax2.minNumb());
+        System.out.println("Минимальное значение матрицы из Integer равен: " + minMax1.minNumb());
+        System.out.println("Минимальное значение матрицы из Double равен: " + minMax2.minNumb());
     }
 }
