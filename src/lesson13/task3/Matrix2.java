@@ -9,12 +9,10 @@ public class Matrix2 {
         Double[][] dMatrix = new Double[][]{{53.9, -2.3, 62.0,}, {28.3, 0.3, -5.0,}};
         Matrix <Integer> integerMatrix=new Matrix<>(iMatrix);
         Matrix <Double>doubleMatrix=new Matrix<>(dMatrix);
-        Matrix sum=integerMatrix.sum(integerMatrix);
-        Matrix multiply = doubleMatrix.multiply(doubleMatrix);
+        Matrix sum=integerMatrix.sum(doubleMatrix);
+        Matrix multiply = doubleMatrix.multiply(5.0);
         System.out.println(multiply);
         System.out.println();
         System.out.println(sum);
-
-
     }
 }

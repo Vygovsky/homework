@@ -2,15 +2,15 @@ package lesson13.task3;
 
 import java.util.Arrays;
 
-public class Matrix <T extends Number>{
+public class Matrix<T extends Number> {
     private T[][] matrix;
     private int rowsNum;
     private int colunsNum;
 
     public Matrix(T[][] matrix) {
-        this.matrix=matrix;
-        rowsNum=matrix.length;
-        colunsNum=matrix[0].length;
+        this.matrix = matrix;
+        rowsNum = matrix.length;
+        colunsNum = matrix[0].length;
     }
 
 
@@ -51,10 +51,10 @@ public class Matrix <T extends Number>{
     public Matrix sum(Matrix m2) {
         if (this.getRowsNum() == m2.getRowsNum() && this.getColunsNum() == m2.getColunsNum()) {
             System.out.println("Матрицы имеет одинаковую размерность");
-            Double[][] d=new Double[rowsNum][colunsNum];
+            Double[][] d = new Double[rowsNum][colunsNum];
             for (int i = 0; i < getRowsNum(); i++) {
                 for (int j = 0; j < getColunsNum(); j++) {
-                    d[i][j]=matrix[i][j].doubleValue()+m2.getMatrix()[i][j].doubleValue();
+                    d[i][j] = matrix[i][j].doubleValue() + m2.getMatrix()[i][j].doubleValue();
                 }
             }
             return new Matrix(d);
@@ -64,11 +64,11 @@ public class Matrix <T extends Number>{
         return null;
     }
 
-    public Matrix multiply(Matrix m) {
-        Double[][] md=new Double[rowsNum][colunsNum];
+    public Matrix multiply(T t) {
+        Double[][] md = new Double[rowsNum][colunsNum];
         for (int i = 0; i < getRowsNum(); i++) {
             for (int j = 0; j < getColunsNum(); j++) {
-                md[i][j]=matrix[i][j].doubleValue()*m.getMatrix()[i][j].doubleValue();
+                md[i][j] = matrix[i][j].doubleValue() * t.doubleValue();
             }
         }
         return new Matrix(md);
@@ -96,11 +96,7 @@ public class Matrix <T extends Number>{
 
     @Override
     public String toString() {
-        return "Matrix{" +
-            "matrix=" + Arrays.toString(matrix) +
-            ", rowsNum=" + rowsNum +
-            ", colunsNum=" + colunsNum +
-            '}';
+        return "Matrix{" + "matrix=" + Arrays.deepToString(matrix) + ", rowsNum=" + rowsNum + ", colunsNum=" + colunsNum + '}';
     }
 }
 
