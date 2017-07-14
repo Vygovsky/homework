@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class MyFileInputOutputStreamDemo {
     public static void main(String args[]) {
-        try(OutputStream output = new FileOutputStream("file.txt")) {
+        try(OutputStream output = new FileOutputStream("src\\lesson17\\task2\\file.txt")) {
             char c[] = {'a', 'b', 'c'};
             for (char c1:c) {
                 output.write(c1); // Запись каждого символа в текстовый файл
