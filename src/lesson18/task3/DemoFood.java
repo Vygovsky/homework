@@ -2,7 +2,7 @@ package lesson18.task3;
 
 public class DemoFood {
     public static void main(String[] args) {
-        Food f=new Food();
+        Food f = new Food();
         f.prepare(new Cookable() {
             @Override
             public void cook() {
