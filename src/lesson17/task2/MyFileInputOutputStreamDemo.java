@@ -14,7 +14,7 @@ public class MyFileInputOutputStreamDemo {
             }
             output.close();
 
-            InputStream input = new FileInputStream("file.txt");
+            InputStream input = new FileInputStream("src\\lesson17\\task2\\file.txt");
             int size = input.available();
 
             for (int j = 0; j < size; j++) {
