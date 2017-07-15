@@ -10,10 +10,10 @@ import java.io.ObjectOutputStream;
  */
 public class MySerializableDemo {
     public static void main(String[] args) {
-        Halter halter = new Halter(5);
+        Halter halter = new Halter();
         Horse horse = new Horse("Лошадка", halter);
 
-        System.out.println("До реализации: " + horse.getHalter().getSize());
+        System.out.println("До реализации: " + horse);
         try {
             FileOutputStream fs = new FileOutputStream("src\\lesson17\\task3\\testSerHorse.ser");
             ObjectOutputStream os = new ObjectOutputStream(fs);
@@ -30,7 +30,7 @@ public class MySerializableDemo {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Реализована: " + horse.getHalter().getSize());
+        System.out.println("Реализована: " + horse);
 
     }
 }
