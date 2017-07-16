@@ -16,21 +16,20 @@ public class MySerializableDemo {
 
         System.out.println("До сереализации: " + horse);
         try (FileOutputStream fs = new FileOutputStream("src\\lesson17\\task3\\testSerHorse.ser");
-             ObjectOutputStream os = new ObjectOutputStream(fs);) {
+             ObjectOutputStream os = new ObjectOutputStream(fs)) {
             os.writeObject(horse);
             os.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
         try (FileInputStream fis = new FileInputStream("src\\lesson17\\task3\\testSerHorse.ser");
-             ObjectInputStream ois = new ObjectInputStream(fis);) {
+             ObjectInputStream ois = new ObjectInputStream(fis)) {
             horse1 = (Horse) ois.readObject();
             ois.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("Реализована: " + horse1);
-
     }
 }
 
