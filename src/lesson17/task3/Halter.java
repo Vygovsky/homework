@@ -15,4 +15,11 @@ public class Halter {
     public int getSize(){
         return size;
     }
+
+    @Override
+    public String toString() {
+        return "Halter{" +
+            "size=" + size +
+            '}';
+    }
 }

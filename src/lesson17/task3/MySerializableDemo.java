@@ -29,7 +29,7 @@ public class MySerializableDemo {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Реализована: " + horse1);
+        System.out.println("После десереализации: " + horse1);
     }
 }
 

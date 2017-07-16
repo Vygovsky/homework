@@ -23,7 +23,7 @@ public class Horse extends Animal implements Serializable {
         return halter;
     }
 
-    public void writObject(ObjectOutputStream os) {
+    private void writeObject(ObjectOutputStream os) {
         try {
             os.defaultWriteObject();
             os.writeInt(halter.getSize());
@@ -32,12 +32,20 @@ public class Horse extends Animal implements Serializable {
         }
     }
 
-    public void readObject(ObjectInputStream is) {
+    private void readObject(ObjectInputStream is) {
         try {
             is.defaultReadObject();
             halter = new Halter(is.readInt());
         } catch (Exception e) {
             e.printStackTrace();
         }
+            }
+
+    @Override
+    public String toString() {
+        return "Horse{" +
+            "name='" + name + '\'' +
+            ", halter=" + halter +
+            '}';
     }
 }
