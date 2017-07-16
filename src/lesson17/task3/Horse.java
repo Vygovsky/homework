@@ -16,11 +16,14 @@ public class Horse extends Animal implements Serializable {
         this.halter = halter;
     }
 
+    public Horse() {
+    }
+
     public Halter getHalter() {
         return halter;
-    }}
+    }
 
-   /* public void writObject(ObjectOutputStream os) {
+    public void writObject(ObjectOutputStream os) {
         try {
             os.defaultWriteObject();
             os.writeInt(halter.getSize());
@@ -37,4 +40,4 @@ public class Horse extends Animal implements Serializable {
             e.printStackTrace();
         }
     }
-}*/
+}
