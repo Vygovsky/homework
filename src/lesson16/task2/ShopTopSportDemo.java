@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class ShopTopSportDemo {
     public static void main(String[] args) {
-        System.out.print("Выберите как Вы хотите войти на сайт: 1- Зарегистрироваться. 2-Зайти как гость: ");
+        System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость: ");
         checkEnter(getEnter());
         System.out.println();
         System.out.print("Выберите категорию:\n 1-\"Мужская одежда\"\n 2-\"Женская одежда\"\n 3-\"Детская одежда\"\n 4-\"Инвентарь\"\n");
@@ -28,8 +28,7 @@ public class ShopTopSportDemo {
         }
     }
 
-    public static void checkCategory(int x) {
-
+    public static boolean checkCategory(int x) {
         switch (x) {
             case 1:
                 System.out.println("Мужская одежда");
@@ -46,6 +45,7 @@ public class ShopTopSportDemo {
             default:
                 System.out.println("Некорректный выбор");
         }
+        return checkCategory(getEnter());
     }
 
     public static int getEnter() {
