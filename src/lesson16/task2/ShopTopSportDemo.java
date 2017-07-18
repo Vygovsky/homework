@@ -16,7 +16,6 @@ public class ShopTopSportDemo {
 
 
     public static void checkEnter(int x) {
-
         switch (x) {
             case 1:
                 System.out.println("Авторизовать пользователя");
