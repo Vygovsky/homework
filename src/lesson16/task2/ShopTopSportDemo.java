@@ -44,7 +44,7 @@ public class ShopTopSportDemo {
                 break;
             default:
                 System.out.println("Некорректный выбор");
-                while (x) {
+                while (x<) {
 
                 }
         }
