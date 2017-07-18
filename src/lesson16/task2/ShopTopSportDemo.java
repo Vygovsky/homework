@@ -9,6 +9,7 @@ public class ShopTopSportDemo {
         checkCategory(2);
 
 
+
     }
 
     public static void checkEnter(int x) {
@@ -37,6 +38,7 @@ public class ShopTopSportDemo {
                 break;
             case 4:
                 System.out.println("Инвентарь");
+                break;
             default:
                 System.out.println("Некорректный выбор");
         }
