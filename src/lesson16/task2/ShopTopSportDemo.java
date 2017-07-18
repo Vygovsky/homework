@@ -1,18 +1,20 @@
 package lesson16.task2;
 
+import java.util.Scanner;
+
 /**
  * Created by roman_v on 18.07.17.
  */
 public class ShopTopSportDemo {
     public static void main(String[] args) {
         checkEnter(1);
-        checkCategory(2);
 
-
-
+        checkCategory(1);
     }
 
+
     public static void checkEnter(int x) {
+
         switch (x) {
             case 1:
                 System.out.println("Авторизовать пользователя");
@@ -26,6 +28,7 @@ public class ShopTopSportDemo {
     }
 
     public static void checkCategory(int x) {
+
         switch (x) {
             case 1:
                 System.out.println("Мужская одежда");
@@ -42,5 +45,18 @@ public class ShopTopSportDemo {
             default:
                 System.out.println("Некорректный выбор");
         }
+    }
+
+    public static int getEnter() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Выберите как Вы хотите войти на сайт: ");
+
+        if (sc.hasNextInt()) {
+            return sc.nextInt();
+        } else {
+            System.out.println("Некорректный выбор");
+            System.exit(0);
+        }
+        return -1;
     }
 }
