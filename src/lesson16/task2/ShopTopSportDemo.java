@@ -7,9 +7,11 @@ import java.util.Scanner;
  */
 public class ShopTopSportDemo {
     public static void main(String[] args) {
-        checkEnter(1);
-
-        checkCategory(1);
+        System.out.print("Выберите как Вы хотите войти на сайт: 1- Зарегистрироваться. 2-Зайти как гость: ");
+        checkEnter(getEnter());
+        System.out.println();
+        System.out.print("Выберите категорию:\n 1-\"Мужская одежда\"\n 2-\"Женская одежда\"\n 3-\"Детская одежда\"\n 4-\"Инвентарь\"\n");
+        checkCategory(getEnter());
     }
 
 
@@ -49,14 +51,10 @@ public class ShopTopSportDemo {
 
     public static int getEnter() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Выберите как Вы хотите войти на сайт: ");
-
         if (sc.hasNextInt()) {
             return sc.nextInt();
         } else {
-            System.out.println("Некорректный выбор");
-            System.exit(0);
+            return -1;
         }
-        return -1;
     }
 }
