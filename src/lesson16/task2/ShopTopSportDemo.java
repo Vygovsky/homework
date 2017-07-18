@@ -44,9 +44,13 @@ public class ShopTopSportDemo {
                 break;
             default:
                 System.out.println("Некорректный выбор");
+                while (x) {
+
+                }
         }
-        return checkCategory(getEnter());
+        return false;
     }
+
 
     public static int getEnter() {
         Scanner sc = new Scanner(System.in);
