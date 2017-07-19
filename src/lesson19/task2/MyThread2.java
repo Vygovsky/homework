@@ -7,10 +7,11 @@ public class MyThread2 extends Thread {
         this.sb = sb;
     }
 @Override
-    public void run() {
+    public synchronized void run() {
         for (int i = 0; i < 100; i++) {
-            System.out.println(sb);
+            System.out.print(sb);
         }
+        System.out.println();
         char ch=sb.charAt(0);
         sb.setCharAt(0,++ch);
     }
