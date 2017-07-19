@@ -28,7 +28,8 @@ public class ShopTopSportDemo {
         }
     }
 
-    public static boolean checkCategory(int x) {
+    public static void checkCategory(int x) {
+
         switch (x) {
             case 1:
                 System.out.println("Мужская одежда");
@@ -44,11 +45,12 @@ public class ShopTopSportDemo {
                 break;
             default:
                 System.out.println("Некорректный выбор");
-                while (x<) {
+                if (x>=4) {
+                    System.out.println("dd");
 
                 }
         }
-        return false;
+
     }
 
 
