@@ -7,11 +7,18 @@ import java.util.Scanner;
  */
 public class ShopTopSportDemo {
     public static void main(String[] args) {
-        System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость: ");
-        checkEnter(getEnter());
+        Scanner scanner = new Scanner(System.in);
+
+        int value;
+        do {
+            System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость: ");
+            value = getEnter(scanner);
+            checkEnter(value);
+        } while (value < 1 || value > 2);
+
         System.out.println();
         System.out.print("Выберите категорию:\n 1-\"Мужская одежда\"\n 2-\"Женская одежда\"\n 3-\"Детская одежда\"\n 4-\"Инвентарь\"\n");
-        checkCategory(getEnter());
+        checkCategory(getEnter(scanner));
     }
 
 
@@ -29,7 +36,6 @@ public class ShopTopSportDemo {
     }
 
     public static void checkCategory(int x) {
-
         switch (x) {
             case 1:
                 System.out.println("Мужская одежда");
@@ -45,20 +51,17 @@ public class ShopTopSportDemo {
                 break;
             default:
                 System.out.println("Некорректный выбор");
-                if (x>=4) {
+                if (x >= 4) {
                     System.out.println("dd");
-
                 }
         }
-
     }
 
-
-    public static int getEnter() {
-        Scanner sc = new Scanner(System.in);
+    public static int getEnter(Scanner sc) {
         if (sc.hasNextInt()) {
             return sc.nextInt();
         } else {
+            sc.nextLine();
             return -1;
         }
     }
