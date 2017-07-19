@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class ShopTopSportDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int value;
         do {
             System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость: ");
@@ -17,7 +16,12 @@ public class ShopTopSportDemo {
         } while (value < 1 || value > 2);
 
         System.out.println();
-        System.out.print("Выберите категорию:\n 1-\"Мужская одежда\"\n 2-\"Женская одежда\"\n 3-\"Детская одежда\"\n 4-\"Инвентарь\"\n");
+        int value2;
+        do {
+            System.out.print("Выберите категорию:\n 1-\"Мужская одежда\"\n 2-\"Женская одежда\"\n 3-\"Детская одежда\"\n 4-\"Инвентарь\"\n");
+            value2 = getEnter(scanner);
+            checkCategory(value2);
+        } while (value2 < 1 || value2 > 4);
         checkCategory(getEnter(scanner));
     }
 
@@ -51,9 +55,6 @@ public class ShopTopSportDemo {
                 break;
             default:
                 System.out.println("Некорректный выбор");
-                if (x >= 4) {
-                    System.out.println("dd");
-                }
         }
     }
 
