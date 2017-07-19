@@ -10,7 +10,7 @@ public class ShopTopSportDemo {
         Scanner scanner = new Scanner(System.in);
         int value;
         do {
-            System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость: ");
+            System.out.print("Выберите как Вы хотите войти на сайт:\n 1- Зарегистрироваться.\n 2- Зайти как гость");
             value = getEnter(scanner);
             checkEnter(value);
         } while (value < 1 || value > 2);
