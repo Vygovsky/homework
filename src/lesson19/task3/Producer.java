@@ -15,7 +15,7 @@ public class Producer implements Runnable {
     public void run() {
         int i = 1;
         while (true) {
-            System.out.println("Отправлено: "+i);
+            System.out.println(i);
             i++;
         }
     }

@@ -15,7 +15,6 @@ public class ProducerDemo {
         Thread t1 = new Thread(consumer1);
         Thread t2= new Thread(consumer2);
 
-
         t3.start();
         t2.start();
         t1.start();
