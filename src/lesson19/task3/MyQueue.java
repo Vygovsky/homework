@@ -9,7 +9,7 @@ public class MyQueue<T> {
     public synchronized T get() {
         while (myQueue.isEmpty()) {
             try {
-                wait();
+                wait(9000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

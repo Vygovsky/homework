@@ -13,7 +13,10 @@ public class ProducerDemo {
 
         Thread t3 = new Thread(producer);
         Thread t1 = new Thread(consumer1);
+        t1.setName("Joni");
         Thread t2= new Thread(consumer2);
+        t2.setName("Lucy");
+
 
         t3.start();
         t2.start();
