@@ -13,10 +13,10 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-        int i = 1;
+        int i = 0;
         while (true) {
             System.out.println("Отправлено: "+i);
-            i++;
+            myQueue.put("String "+i);
         }
     }
 }

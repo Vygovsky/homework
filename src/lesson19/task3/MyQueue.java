@@ -15,6 +15,7 @@ public class MyQueue<T> {
             }
         }
         System.out.println("Пoлyчeнo: " + myQueue.peek() + " " + Thread.currentThread().getName());
+        notify();
         return myQueue.poll();
     }
 
