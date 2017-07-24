@@ -14,7 +14,6 @@ public class MyQueue<T> {
                 e.printStackTrace();
             }
         }
-        System.out.println("Пoлyчeнo: " + Thread.currentThread().getName());
         return myQueue.poll();
     }
 

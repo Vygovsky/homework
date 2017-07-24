@@ -13,7 +13,7 @@ public class Consumer implements Runnable {
     @Override
     public void run() {
         while (true) {
-            System.out.println("Получено: " + myQueue.get() + " " + Thread.currentThread());
+            System.out.println("Получено: " + myQueue.get() + " " + Thread.currentThread().getName());
         }
     }
 }

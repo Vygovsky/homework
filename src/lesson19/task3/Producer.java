@@ -14,11 +14,17 @@ public class Producer implements Runnable {
     @Override
     public void run() {
         int i = 0;
-        while (true) {
-            if (myQueue.size() > 3) {
-                System.out.println("Отправлено: " + i++);
-                myQueue.put("String " + i);
+        while (true)
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+
+        if (myQueue.size() < 3) {
+            System.out.println("Отправлено: " + i++);
+            myQueue.put("task " + i);
         }
+
     }
 }
