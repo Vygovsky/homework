@@ -9,19 +9,20 @@ public class MyQueue<T> {
     public synchronized T get() {
         while (myQueue.isEmpty()) {
             try {
-                wait(9000);
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Пoлyчeнo: " + myQueue.peek() + " " + Thread.currentThread().getName());
-        notify();
+        System.out.println("Пoлyчeнo: " + Thread.currentThread().getName());
         return myQueue.poll();
     }
 
     public synchronized void put(T n) {
         myQueue.offer(n);
-        System.out.println("Oтпpaвлeнo: " + n);
-        notifyAll();
+        notify();
+    }
+    public int size(){
+        return myQueue.size();
     }
 }

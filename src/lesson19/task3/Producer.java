@@ -15,8 +15,10 @@ public class Producer implements Runnable {
     public void run() {
         int i = 0;
         while (true) {
-            System.out.println("Отправлено: "+i);
-            myQueue.put("String "+i);
+            if (myQueue.size() > 3) {
+                System.out.println("Отправлено: " + i++);
+                myQueue.put("String " + i);
+            }
         }
     }
 }
