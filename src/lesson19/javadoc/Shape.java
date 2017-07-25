@@ -3,7 +3,7 @@ package lesson19.javadoc;
 /**
  * @author Roman
  * @version 1
- * on 01.07.2017.
+ * on 25.07.2017.
  */
 
 public abstract class Shape {
@@ -11,26 +11,26 @@ public abstract class Shape {
     private String color;
 
     /**
-     * Абстрактный  метод для рисования фигуры
+     * Abstract method for drawing shapes
      */
     abstract void draw();
 
     /**
-     * Возвращает {@return area}площадь фигуры по умолчанию
+     * Returns the @return area of the default shape area
      */
     public double area() {
         return 0;
     }
 
     /**
-     * Конструктор принимат {@param color}  параметр цвет
+     * The constructor takes @param color parameter color
      */
     public Shape(String color) {
         this.color = color;
     }
 
     /**
-     * @return Метод возвращает заданный цвет
+     * @return The method returns the specified color
      */
 
     public String getColor() {
@@ -38,7 +38,7 @@ public abstract class Shape {
     }
 
     /**
-     * Метот {@param color} в который можно записать цвет
+     * The @param color method in which you can write a color
      */
     public void setColor(String color) {
         this.color = color;
