@@ -2,15 +2,11 @@ package lesson19.javadoc;
 
 /**
  * @author Roman
- * @version 2
+ * @version 1
  * on 01.07.2017.
  */
+
 public abstract class Shape {
-    /**
-     * <p>Абстрактный класс.</p>
-     * <p>Присваевам приватную переменную, создаем
-     * абстрактный метод и площадь фигуры, добавляем геттеры и сеттеры; </p>
-     */
 
     private String color;
 
@@ -20,21 +16,21 @@ public abstract class Shape {
     abstract void draw();
 
     /**
-     * @return Возвращает плолощадь фигуры
+     * Возвращает {@return area}площадь фигуры по умолчанию
      */
     public double area() {
         return 0;
     }
 
     /**
-     * @param color Конструктор с параметрами color
+     * Конструктор принимат {@param color}  параметр цвет
      */
     public Shape(String color) {
         this.color = color;
     }
 
     /**
-     * @return Возвращает метод геттера
+     * @return Метод возвращает заданный цвет
      */
 
     public String getColor() {
@@ -42,7 +38,7 @@ public abstract class Shape {
     }
 
     /**
-     * @param color Возвращает метод сеттера
+     * Метот {@param color} в который можно записать цвет
      */
     public void setColor(String color) {
         this.color = color;
