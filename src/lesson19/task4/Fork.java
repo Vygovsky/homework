@@ -5,14 +5,12 @@ package lesson19.task4;
  */
 public class Fork {
 
-    public void takeForkLeft() {
-        System.out.println("Философ берет вилку левой рукой");
-    }
-    public void takeForkRight() {
-        System.out.println("Философ берет вилку правой рукой");
+    public void takeFork() {
+        System.out.println("Философ берет вилку рукой");
     }
 
     public void dropFork() {
+        System.out.println("Филосов кладет вилку на стол");
 
     }
 }
