@@ -19,10 +19,8 @@ public class ClassFlower {
         System.out.println();
         System.out.println("Is constructor: "+Arrays.toString(flower.getDeclaredConstructors()));
         System.out.println();
-        System.out.println("Is methods: "+Arrays.toString(flower.getDeclaredMethods()));
         for (Method flow : flower.getDeclaredMethods()) {
-            System.out.println(flow);
-
+            System.out.println("Is methods: "+flow);
         }
     }
 }
