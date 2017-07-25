@@ -11,11 +11,15 @@ import java.util.Arrays;
 public class ClassFlower {
     public static void main(String[] args) {
         Class flower = Flower.class;
-        System.out.println(flower.getName());
-        System.out.println("saff "+Arrays.toString(flower.getDeclaredClasses()));
-        System.out.println(Arrays.toString(flower.getDeclaredConstructors()));
-        System.out.println(Arrays.toString(flower.getDeclaredFields()));
-        System.out.println(Arrays.toString(flower.getDeclaredMethods()));
+        System.out.println("Class name: "+flower.getName());
+        System.out.println();
+        System.out.println("Is classes: "+Arrays.toString(flower.getDeclaredClasses()));
+        System.out.println();
+        System.out.println("Is fields: "+Arrays.toString(flower.getDeclaredFields()));
+        System.out.println();
+        System.out.println("Is constructor: "+Arrays.toString(flower.getDeclaredConstructors()));
+        System.out.println();
+        System.out.println("Is methods: "+Arrays.toString(flower.getDeclaredMethods()));
         for (Method flow : flower.getDeclaredMethods()) {
             System.out.println(flow);
 
