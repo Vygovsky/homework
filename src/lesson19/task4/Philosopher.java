@@ -39,8 +39,9 @@ public class Philosopher implements Runnable {
 
     @Override
     public void run() {
-        eat();
-        think();
-
+        while (true) {
+            eat();
+            think();
+        }
     }
 }

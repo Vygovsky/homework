@@ -18,13 +18,8 @@ public class Fork {
     }
 
     public synchronized void dropFork() {
-        while (this.philosopher == null) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            notify();
-        }
+        this.philosopher = null;
+        notify();
     }
 }
+
