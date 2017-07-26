@@ -6,22 +6,25 @@ package lesson19.task4;
 public class Fork {
     private Philosopher philosopher;
 
-    public synchronized void takeFork() {
-        philosopher.eat();
-        while (true) {
+    public synchronized void takeFork(Philosopher philosopher) {
+        while (this.philosopher != null) {
             try {
-                wait(2000);
-                System.out.println("Ест " + philosopher);
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        philosopher = null;
-        notify();
+        this.philosopher = philosopher;
     }
 
-    public void dropFork() {
-        System.out.println("Филосов кладет вилку на стол");
-
+    public synchronized void dropFork() {
+        while (this.philosopher == null) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            notify();
+        }
     }
 }

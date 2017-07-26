@@ -27,8 +27,8 @@ public class Philosopher implements Runnable {
     }
 
     public void eat() {
-        fork1.takeFork();
-        fork2.takeFork();
+        fork1.takeFork(this);
+        fork2.takeFork(this);
         try {
             System.out.println("Кушает спагетти");
             Thread.sleep(100);
