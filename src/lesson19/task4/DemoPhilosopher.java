@@ -11,14 +11,13 @@ public class DemoPhilosopher {
 
         };
         Philosopher[] philosophers = new Philosopher[]{
-                new Philosopher(1, forks[0], forks[1]),
-                new Philosopher(2, forks[1], forks[2]),
-                new Philosopher(3, forks[3], forks[2]),
-                new Philosopher(4, forks[3], forks[4]),
-                new Philosopher(5, forks[4], forks[0]),
+                new Philosopher("Сократ", forks[0], forks[1]),
+                new Philosopher("Николай", forks[1], forks[2]),
+                new Philosopher("Анатолий", forks[3], forks[2]),
+                new Philosopher("Генрих", forks[3], forks[4]),
+                new Philosopher("Алексей", forks[4], forks[0]),
         };
         for (Philosopher philosopher : philosophers)
             new Thread(philosopher).start();
-
     }
 }
