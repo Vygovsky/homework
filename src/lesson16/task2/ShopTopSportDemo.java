@@ -1,5 +1,9 @@
 package lesson16.task2;
 
+import lesson11.task2.Size;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -7,6 +11,7 @@ import java.util.Scanner;
  */
 public class ShopTopSportDemo {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int value;
         do {
@@ -22,7 +27,52 @@ public class ShopTopSportDemo {
             value2 = getEnter(scanner);
             checkCategory(value2);
         } while (value2 < 1 || value2 > 4);
-        checkCategory(getEnter(scanner));
+        /*checkCategory(getEnter(scanner));*/
+
+        List<Good> mensGoods = getMensGoods();
+        System.out.print(getMenGoodsString(mensGoods));
+
+
+    }
+
+    static Integer idCount = null;
+
+    private static int getUniqueId() {
+        if (idCount == null) {
+            idCount = 1;
+        }else {
+            idCount ++;
+        }
+        return idCount;
+    }
+
+    private static String getMenGoodsString(List<Good> goods) {
+        StringBuilder result = new StringBuilder();
+        for (Good good : goods) {
+            result.append(good.getId())
+                    .append("-")
+                    .append(good.getName())
+                    .append(";")
+                    .append("\n");
+        }
+
+        return result.toString();
+    }
+
+    private static List<Good> getMensGoods(){
+        List<Good> result = new ArrayList<>();
+            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good nike = new Good(getUniqueId(),"nike", Size.S);
+            Good puna = new Good(getUniqueId(),"puna", Size.S);
+
+            result.add(adidas);
+            result.add(nike);
+            result.add(puna);
+
+            return result;
     }
 
 
