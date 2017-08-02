@@ -13,15 +13,16 @@ public class Basket {
     }
 
     public void addGoods(Good goods){
-
         goodMap.put(goods,1);
-       /* if (goodMap.containsKey(goods)) {
+
+
+        /* if (goodMap.containsKey(goods)) {
             int count=goodMap.get(goods);
             count++;
 
         }*/
     }
-    public void isEmpty(Goods goods){
+    public void isEmpty(Good goods){
 
     }
 }
