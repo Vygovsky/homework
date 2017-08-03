@@ -62,9 +62,9 @@ public class ShopTopSportDemo {
     private static List<Good> getMensGoods(){
         List<Good> result = new ArrayList<>();
             Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas1 = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas2= new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
+            Good adidas3 = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
             Good nike = new Good(getUniqueId(),"nike", Size.S);
             Good puna = new Good(getUniqueId(),"puna", Size.S);
 

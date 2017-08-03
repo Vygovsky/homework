@@ -7,13 +7,12 @@ import java.util.*;
  */
 public class ProductDemo {
     public static void main(String[] args) {
-        ProdCostComporator costComporator = new ProdCostComporator();
-        SortedSet<Product> products = new TreeSet<>(costComporator);
-        ProdNameComporator nameComporator = new ProdNameComporator();
-        SortedSet<Product> products1 = new TreeSet<>(nameComporator);
-        ProdRatingComporator ratingComporator = new ProdRatingComporator();
-        SortedSet<Product> products2 = new TreeSet<>(ratingComporator);
-
+      //ProdCostComporator costComporator = new ProdCostComporator();
+        List<Product> products = new ArrayList<>();
+    //    ProdNameComporator nameComporator = new ProdNameComporator();
+        List<Product> products1 = new ArrayList<>();
+     //  ProdRatingComporator ratingComporator = new ProdRatingComporator();
+        List<Product> products2 = new ArrayList<>();
 
         products.add(new Product("Рубашка", 125.35, 1));
         products.add(new Product("Брюки", 350, 2));
@@ -25,18 +24,21 @@ public class ProductDemo {
         products.add(new Product("Футболка", 225, 3));
         products.add(new Product("Трусы", 800, 4));
         products.add(new Product("Джинсы", 900, 5));
-        Category clothes = new Category("Одежда", products);
+
         printInfo(products);
         products1.addAll(products);
+
+        Collections.reverse(products);
         printInfo(products1);
         products2.addAll(products);
         printInfo(products2);
     }
 
-    public static void printInfo(Set<Product> products) {
+    public static void printInfo(List<Product> products) {
         System.out.printf("%-25S    %-10S    %S\n", "Товар", "Цена", "Рейтинг ");
         for (Product element2 : products) {
             System.out.printf("%-25s    %-10S    %s\n", element2.getName(), element2.getCost(), element2.getRating());
+
         }
         System.out.println();
     }

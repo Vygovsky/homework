@@ -1,5 +1,7 @@
 package lesson15.task5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -8,14 +10,14 @@ import java.util.TreeSet;
  */
 public class Category {
     private String name;
-   private SortedSet<Product> products;
+   private List<Product> products;
 
     public Category(String name) {
         this.name = name;
-        products=new TreeSet<>();
+        products=new ArrayList<>();
     }
 
-    public Category(String name, SortedSet<Product> products) {
+    public Category(String name, ArrayList<Product> products) {
         this.name = name;
         this.products = products;
     }
@@ -28,11 +30,11 @@ public class Category {
         this.name = name;
     }
 
-    public SortedSet<Product> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(SortedSet<Product> products) {
+    public void setProducts(ArrayList<Product> products) {
         this.products = products;
     }
 
