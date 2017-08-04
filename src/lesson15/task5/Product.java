@@ -1,8 +1,5 @@
-package lesson15.task5;
+/*package lesson15.task5;
 
-/**
- * Created by roman_v on 30.06.17.
- */
 public class Product {
     private String name;
     private double cost;
@@ -66,3 +63,5 @@ public class Product {
         return "Product{" + "name='" + name + '\'' + ", cost=" + cost + ", rating=" + rating + '}';
     }
 }
+
+*/
