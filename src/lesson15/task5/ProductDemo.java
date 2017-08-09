@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Created by roman_v on 30.06.17.
- */
+
 public class ProductDemo {
     public static void main(String[] args) {
 
@@ -27,7 +27,7 @@ public class ProductDemo {
 
     }
 
-    public static void printInfo(List<Product> products) {
+   /* public static void printInfo(List<Product> products) {
         System.out.printf("%-25S    %-10S    %S\n", "Товар", "Цена", "Рейтинг ");
         for (Product element2 : products) {
             System.out.printf("%-25s    %-10S    %s\n", element2.getName(), element2.getCost(), element2.getRating());
@@ -36,4 +36,4 @@ public class ProductDemo {
         System.out.println();
         Collections.reverse( products);
     }
-}
+}*/
