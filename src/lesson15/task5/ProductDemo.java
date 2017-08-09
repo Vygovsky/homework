@@ -1,9 +1,8 @@
 package lesson15.task5;
 
-import java.util.*;
+import lesson14.task5.Product;
 
-/**
- * Created by roman_v on 30.06.17.
+import java.util.*;
 
 public class ProductDemo {
     public static void main(String[] args) {
@@ -21,19 +20,38 @@ public class ProductDemo {
         products.add(new Product("Трусы", 800, 4));
         products.add(new Product("Джинсы", 900, 5));
 
-       printInfo(products);
+        printInfo(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        },false);
 
-        Collections.reverse(products);
+        printInfo(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getCost().compareTo(o2.getCost());
+            }
+        },false);
 
+        printInfo(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getRating().compareTo(o2.getRating());
+            }
+        },false);
     }
 
-   /* public static void printInfo(List<Product> products) {
+    public static void printInfo(List<Product> products, Comparator<Product> comparator, boolean order) {
+        Collections.sort(products, comparator);
+        if (!order) {
+            Collections.reverse(products);
+        }
         System.out.printf("%-25S    %-10S    %S\n", "Товар", "Цена", "Рейтинг ");
         for (Product element2 : products) {
             System.out.printf("%-25s    %-10S    %s\n", element2.getName(), element2.getCost(), element2.getRating());
-            Collections.sort();
         }
         System.out.println();
-        Collections.reverse( products);
+        //Collections.reverse( products);
     }
-}*/
+}
