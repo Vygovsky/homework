@@ -11,6 +11,7 @@ public class MinMaxDemo {
         MinMax<Double> minMax2 = new MinMax<>(dNumb);
         MinMax<Integer> maxInt = new MinMax<>(intNumb);
         MinMax<Double> maxDouble = new MinMax<>(dNumb);
+
         System.out.println("Минимальное значение матрицы из Integer равен: " + minMax1.minNumb());
         System.out.println("Минимальное значение матрицы из Double равен: " + minMax2.minNumb());
         System.out.println("-------------------------------");
