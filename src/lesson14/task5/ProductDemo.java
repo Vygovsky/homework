@@ -1,12 +1,9 @@
 package lesson14.task5;
 
-    import java.util.Set;
-    import java.util.SortedSet;
-    import java.util.TreeSet;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
-/**
- * Created by roman_v on 30.06.17.
- */
 public class ProductDemo {
     public static void main(String[] args) {
         ProdCostComporator costComporator = new ProdCostComporator();
