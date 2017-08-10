@@ -6,7 +6,6 @@ import java.util.*;
 
 public class ProductDemo {
     public static void main(String[] args) {
-
         List<Product> products = new ArrayList<>();
 
         products.add(new Product("Рубашка", 125.35, 1));
@@ -25,21 +24,21 @@ public class ProductDemo {
             public int compare(Product o1, Product o2) {
                 return o1.getName().compareTo(o2.getName());
             }
-        },false);
+        }, false);
 
         printInfo(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
                 return o1.getCost().compareTo(o2.getCost());
             }
-        },false);
+        }, false);
 
         printInfo(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
                 return o1.getRating().compareTo(o2.getRating());
             }
-        },false);
+        }, false);
     }
 
     public static void printInfo(List<Product> products, Comparator<Product> comparator, boolean order) {
@@ -52,6 +51,5 @@ public class ProductDemo {
             System.out.printf("%-25s    %-10S    %s\n", element2.getName(), element2.getCost(), element2.getRating());
         }
         System.out.println();
-        //Collections.reverse( products);
     }
 }
