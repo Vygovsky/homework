@@ -15,6 +15,7 @@ public class User {
         this.logon = logon;
         this.password = password;
     }
+
     private static void validate(String login, String password, String confirm) {
         try {
             if (login.length() > 20) {

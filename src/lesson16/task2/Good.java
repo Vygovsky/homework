@@ -3,6 +3,7 @@ package lesson16.task2;
 import lesson11.task2.Size;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Good {
@@ -42,4 +43,5 @@ public class Good {
     public void setSizes(List<Size> sizes) {
         this.sizes = sizes;
     }
+
 }

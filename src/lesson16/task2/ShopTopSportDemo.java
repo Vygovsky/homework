@@ -35,13 +35,13 @@ public class ShopTopSportDemo {
 
     }
 
-    static Integer idCount = null;
+    public static Integer idCount = null;
 
     private static int getUniqueId() {
         if (idCount == null) {
             idCount = 1;
-        }else {
-            idCount ++;
+        } else {
+            idCount++;
         }
         return idCount;
     }
@@ -59,20 +59,20 @@ public class ShopTopSportDemo {
         return result.toString();
     }
 
-    private static List<Good> getMensGoods(){
+    private static List<Good> getMensGoods() {
         List<Good> result = new ArrayList<>();
-            Good adidas = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas1 = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas2= new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good adidas3 = new Good(getUniqueId(),"adidas", Size.S, Size.M, Size.L);
-            Good nike = new Good(getUniqueId(),"nike", Size.S);
-            Good puna = new Good(getUniqueId(),"puna", Size.S);
+        Good adidas = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
+        Good adidas1 = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
+        Good adidas2 = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
+        Good adidas3 = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
+        Good nike = new Good(getUniqueId(), "nike", Size.S);
+        Good puna = new Good(getUniqueId(), "puna", Size.S);
 
-            result.add(adidas);
-            result.add(nike);
-            result.add(puna);
+        result.add(adidas);
+        result.add(nike);
+        result.add(puna);
 
-            return result;
+        return result;
     }
 
 
