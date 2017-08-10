@@ -14,8 +14,8 @@ public class MinMax<T extends Number> {
         T min = arr[0];
         for (T i : arr) {
             if (i.doubleValue() < min.doubleValue()) {
+                min = i;
             }
-            min = i;
         }
         return min.doubleValue();
     }
@@ -24,8 +24,8 @@ public class MinMax<T extends Number> {
         T max = arr[0];
         for (T i : arr) {
             if (i.doubleValue() > max.doubleValue()) {
+                max = i;
             }
-            max = i;
         }
         return max.doubleValue();
     }
