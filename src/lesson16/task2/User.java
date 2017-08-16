@@ -14,9 +14,13 @@ public class User {
     public User(String logon, String password, Basket basket) {
         this.logon = logon;
         this.password = password;
+        this.basket=basket;
     }
 
-    private static void validate(String login, String password, String confirm) {
+    public User() {
+    }
+
+    public static void validate(String login, String password, String confirm) {
         try {
             if (login.length() > 20) {
                 System.out.println("Login");
@@ -30,7 +34,8 @@ public class User {
                 System.out.println("Не верный логин или пароль");
             }
         } catch (WrongLoginException | WrongPasswordExep e) {
-            System.out.println("Не верный логин или пароль");
+            System.out.println(e.getMessage());
+            System.out.println("!!!Не верный логин или пароль");
 
         } finally {
             System.out.println(login + " " + password + " " + confirm);

@@ -29,8 +29,8 @@ public class ShopTopSportDemo {
         } while (value2 < 1 || value2 > 4);
         /*checkCategory(getEnter(scanner));*/
 
-        List<Good> mensGoods = getMensGoods();
-        System.out.print(getMenGoodsString(mensGoods));
+      // List<Good> mensGoods = getMensGoods();
+      //  System.out.print(getMenGoodsString(mensGoods));
 
 
     }
@@ -59,7 +59,7 @@ public class ShopTopSportDemo {
         return result.toString();
     }
 
-    private static List<Good> getMensGoods() {
+   /* private static List<Good> getMensGoods() {
         List<Good> result = new ArrayList<>();
         Good adidas = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
         Good adidas1 = new Good(getUniqueId(), "adidas", Size.S, Size.M, Size.L);
@@ -73,13 +73,20 @@ public class ShopTopSportDemo {
         result.add(puna);
 
         return result;
-    }
+    }*/
 
 
     public static void checkEnter(int x) {
         switch (x) {
             case 1:
-                System.out.println("Авторизовать пользователя");
+                System.out.println("Введите логин");
+                Scanner sc= new Scanner(System.in);
+                String login= sc.nextLine();
+                System.out.println("Введите пароль");
+                String password= sc.nextLine();
+                System.out.println("Подтвердите пароль");
+                String confirm= sc.nextLine();
+                User.validate(login,password,confirm);
                 break;
             case 2:
                 System.out.println("Ввойти как гость");
