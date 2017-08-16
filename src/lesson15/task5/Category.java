@@ -15,6 +15,10 @@ public class Category {
         products = new ArrayList<>();
     }
 
+    public Category(Product product) {
+
+    }
+
     public String getName() {
         return name;
     }
