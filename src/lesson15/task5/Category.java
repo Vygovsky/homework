@@ -15,10 +15,6 @@ public class Category {
         products = new ArrayList<>();
     }
 
-    public Category(Product product) {
-
-    }
-
     public String getName() {
         return name;
     }
@@ -33,6 +29,10 @@ public class Category {
 
     public void setProducts(List<Product> products) {
         this.products = products;
+    }
+
+    public void addProduct(Product product) {
+        products.add(product);
     }
 
     @Override
