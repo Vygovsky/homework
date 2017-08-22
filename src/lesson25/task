@@ -1,0 +1,11 @@
+Написать класс ItemDB с полями:
+1 List<Item> itemList (класс Item c полями id, name, price, category : enum{...}), enum Types
+2 Для Item методы геттеры, сеттеры всех полей
+3 Для ItemDB методы геттеры, сеттеры всех полей,
+4 метод для добавления коллекции Itemов в List<Item>
+5 метод для добавления одного Item в List<Item>
+6 метод для добавления нескольких Itemов в List<Item> используя varargs -> add(Item... items)
+7 Для удаления использовать Iterator
+8 метод для удаления всех Item из List<Item>
+9 метод для удаления одного Item из List<Item> (передается как параметр в метод)
+10 метод для update Item price конкретного Item из List<Item> (передается как параметр в метод id, price)
