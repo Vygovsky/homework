@@ -2,6 +2,7 @@ package lesson25;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class BookBd {
@@ -17,6 +18,24 @@ public class BookBd {
                 new Book(38, "Wind-stricken", "Van Damm", 436.20, Genre.CLASSIC),
                 new Book(38, "Ninja Turtles", "Anna Ahmatova", 800.60, Genre.CHILDRENS_LITERATURE),
                 new Book(38, "Japan", "Pavlo Zibrov", 50, Genre.POEMS));
+    }
+
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
+    public void removeBook(Book book) {
+        books.remove(book);
+
+    }
+    public void addManyBook(Book ... book){
+
+    }
+    public void removeSeveralBook(){
+        Iterator<Book> bookIterator=books.iterator();
+        while (bookIterator.hasNext()){
+           books.remove(books.iterator().next());
+        }
     }
 
 
