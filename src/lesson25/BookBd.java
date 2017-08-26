@@ -28,15 +28,39 @@ public class BookBd {
         books.remove(book);
 
     }
-    public void addManyBook(Book ... book){
 
-    }
-    public void removeSeveralBook(){
-        Iterator<Book> bookIterator=books.iterator();
-        while (bookIterator.hasNext()){
-           books.remove(books.iterator().next());
+    public void fillBook(Book... book) {
+        for (Book books : book) {
+            System.out.println("polozhit " + books.getName() + "," + books.getId());
         }
     }
 
+    public void removeSeveralBook() {
+        Iterator<Book> bookIterator = books.iterator();
+        while (bookIterator.hasNext()) {
+            bookIterator.remove();
+        }
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        BookBd bookBd = (BookBd) o;
+
+        return books.equals(bookBd.books);
+    }
+
+    @Override
+    public int hashCode() {
+        return books.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "BookBd{" +
+                "books=" + books +
+                '}';
+    }
 }
