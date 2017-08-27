@@ -13,7 +13,7 @@ public class BookBd {
                 new Book(89, "Killer", "Button Villok", 320, Genre.DETECTIVE),
                 new Book(70, "Ant", "Tom Cruze", 326, Genre.CHILDRENS_LITERATURE),
                 new Book(42, "Hobbits", "Lep Leprecon", 198, Genre.POEMS),
-                new Book(38, "Last Blod", "Chak Noris", 1060, Genre.DISPLAYS),
+                new Book(38, "Last Blood", "Chak Noris", 1060, Genre.DISPLAYS),
                 new Book(123, "Zombies are attacking", "Arnold Shvarceniger", 100, Genre.FANTASTIC),
                 new Book(38, "Wind-stricken", "Van Damm", 436.20, Genre.CLASSIC),
                 new Book(38, "Ninja Turtles", "Anna Ahmatova", 800.60, Genre.CHILDRENS_LITERATURE),
@@ -28,6 +28,9 @@ public class BookBd {
         books.remove(book);
 
     }
+    public void removeAllBook(Book book) {
+   //     books.removeAll();
+    }
 
     public void fillBook(Book... book) {
         for (Book books : book) {
@@ -38,9 +41,11 @@ public class BookBd {
     public void removeSeveralBook() {
         Iterator<Book> bookIterator = books.iterator();
         while (bookIterator.hasNext()) {
+            bookIterator.next();
             bookIterator.remove();
         }
     }
+
 
     @Override
     public boolean equals(Object o) {

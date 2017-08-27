@@ -6,6 +6,7 @@ import java.util.List;
 public class DemoBook {
     public static void main(String[] args) {
         BookBd bookBd=new BookBd();
+        bookBd.removeSeveralBook();
 
 
 
