@@ -1,9 +1,6 @@
 package lesson25;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class BookBd {
     private List<Book> books;
@@ -28,8 +25,8 @@ public class BookBd {
         books.remove(book);
 
     }
-    public void removeAllBook(Book book) {
-   //     books.removeAll();
+    public void removeAllBook() {
+       books.removeAll(books);
     }
 
     public void fillBook(Book... book) {
