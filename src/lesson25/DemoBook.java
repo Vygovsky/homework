@@ -15,11 +15,10 @@ public class DemoBook {
                 new Book(),
                 new Book());
 
-        for (BookBd bb : bookBd) {
-            System.out.println(bb);
-        }
-        bookBd.upDate(20,600);
+        bookBd.update(20,600);
+        bookBd.printInfo();
         bookBd.removeAllBook();
+        System.out.println(bookBd);
 
     }
 }
