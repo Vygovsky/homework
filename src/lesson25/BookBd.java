@@ -26,23 +26,14 @@ public class BookBd {
 
     }
     public void removeAllBook() {
-       books.removeAll(books);
+      books.clear();
     }
 
-    public void fillBook(Book... book) {
-        for (Book books : book) {
-            System.out.println("polozhit " + books.getName() + "," + books.getId());
+    public void fillBook(Book... books) {
+        for (Book book : books) {
+            addBook(book);
         }
     }
-
-    public void removeSeveralBook() {
-        Iterator<Book> bookIterator = books.iterator();
-        while (bookIterator.hasNext()) {
-            bookIterator.next();
-            bookIterator.remove();
-        }
-    }
-
 
     @Override
     public boolean equals(Object o) {
