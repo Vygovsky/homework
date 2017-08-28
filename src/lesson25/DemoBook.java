@@ -9,12 +9,16 @@ public class DemoBook {
 
         bookBd.removeBook(new Book(123, "Zombies are attacking", "Arnold Shvarceniger", 100, Genre.FANTASTIC));
 
-        bookBd.fillBook(new Book(), new Book(), new Book(), new Book());
+        bookBd.fillBook(
+                new Book(23,"Mounth","Adronov",259.60,Genre.POEMS),
+                new Book(),
+                new Book(),
+                new Book());
 
         for (BookBd bb : bookBd) {
             System.out.println(bb);
-
         }
+        bookBd.upDate(20,600);
         bookBd.removeAllBook();
 
     }

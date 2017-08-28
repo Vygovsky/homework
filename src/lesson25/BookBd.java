@@ -1,5 +1,6 @@
 package lesson25;
 
+import javax.swing.text.html.HTMLDocument;
 import java.util.*;
 
 public class BookBd {
@@ -32,6 +33,16 @@ public class BookBd {
     public void fillBook(Book... books) {
         for (Book book : books) {
             addBook(book);
+        }
+    }
+    public void upDate(long id,double price){
+        Iterator <Book> iterator= books.iterator();
+        while (iterator.hasNext()){
+            iterator.next();
+            Book book=iterator.next();
+            if(book.getId()==id){
+                book.setPrice(price);
+            }
         }
     }
 
