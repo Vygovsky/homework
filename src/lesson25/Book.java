@@ -1,10 +1,11 @@
 package lesson25;
 
 
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 
-public class Book {
+public class Book implements Serializable{
     private int id;
     private String name;
     private String author;

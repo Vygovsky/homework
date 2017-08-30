@@ -3,7 +3,7 @@ package lesson25;
 import java.io.*;
 import java.util.*;
 
-public class BookBd {
+public class BookBd implements Serializable {
     private List<Book> books;
 
     public List<Book> getBooks() {
@@ -67,10 +67,15 @@ public class BookBd {
             e1.printStackTrace();
         }
     }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+
     public void deserialize(String fileName){
         try (FileInputStream fis = new FileInputStream(fileName);
              ObjectInputStream ois = new ObjectInputStream(fis)) {
-            this.books = (BookBd) ois.readObject();
+            this.setBooks(((BookBd)ois.readObject()).getBooks());
         } catch (Exception e) {
             e.printStackTrace();
         }

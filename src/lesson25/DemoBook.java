@@ -17,6 +17,12 @@ public class DemoBook {
 
         bookBd.update(20,600);
         bookBd.printInfo();
+        bookBd.serialize("BD.ser");
+        BookBd bookBd1=new BookBd();
+        bookBd1.deserialize("BD.ser");
+        System.out.println(bookBd1);
+
+
 
         bookBd.removeAllBook();
         System.out.println(bookBd);
