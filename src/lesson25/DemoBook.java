@@ -17,6 +17,7 @@ public class DemoBook {
 
         bookBd.update(20,600);
         bookBd.printInfo();
+
         bookBd.removeAllBook();
         System.out.println(bookBd);
 

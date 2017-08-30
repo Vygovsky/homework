@@ -1,10 +1,14 @@
 package lesson25;
 
-import javax.swing.text.html.HTMLDocument;
+import java.io.*;
 import java.util.*;
 
 public class BookBd {
     private List<Book> books;
+
+    public List<Book> getBooks() {
+        return books;
+    }
 
     public BookBd() {
         books = new ArrayList<>(Arrays.asList(new Book(52, "Horror", "Rich Hak", 520, Genre.FANTASTIC),
@@ -51,6 +55,24 @@ public class BookBd {
             if (book.getId() == id) {
                 book.setPrice(price);
             }
+        }
+    }
+    public void serialize(String fileName) {
+        try (FileOutputStream fs = new FileOutputStream(fileName);
+             ObjectOutputStream os = new ObjectOutputStream(fs)) {
+            os.writeObject(this);
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+    public void deserialize(String fileName){
+        try (FileInputStream fis = new FileInputStream(fileName);
+             ObjectInputStream ois = new ObjectInputStream(fis)) {
+            this.books = (BookBd) ois.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
