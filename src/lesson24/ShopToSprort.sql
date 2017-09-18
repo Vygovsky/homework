@@ -15,7 +15,7 @@ CREATE TABLE `goods` (
 	`price` DOUBLE NOT NULL,
 	`rank` INT(10) NOT NULL,
 	PRIMARY KEY (`id`)
-)
+)basket
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=9;
