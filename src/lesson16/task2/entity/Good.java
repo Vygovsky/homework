@@ -5,6 +5,7 @@ import lesson11.task2.Size;
 import java.io.Serializable;
 
 public class Good implements Serializable {
+
     private int id;
     private String name;
     private Size size;
