@@ -6,10 +6,10 @@ import java.sql.SQLException;
 
 /**
  * Created by Roman_v on 18.09.2017.
- */
+
 public class BdConection {
 
-    public static Connection getConnection(){
+   public static Connection getConnection(){
         String url = "jdbc:mysql://localhost:3306/shoptosport?SSL=false";
         String login = "root";
         String password = "admin";
@@ -33,4 +33,4 @@ public class BdConection {
             e.printStackTrace();
         }
     }
-}
+}*/

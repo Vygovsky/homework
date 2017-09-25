@@ -8,7 +8,7 @@ import java.util.Collections;
 
 /**
  * Created by Roman_v on 18.09.2017.
- */
+
 public class UserDao {
     private Connection connection;
 
@@ -42,3 +42,4 @@ public class UserDao {
 
     }
 }
+*/
