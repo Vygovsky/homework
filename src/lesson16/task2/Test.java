@@ -1,6 +1,8 @@
 package lesson16.task2;
 
 import lesson11.task2.Size;
+import lesson16.task2.entity.Basket;
+import lesson16.task2.entity.Good;
 
 public class Test {
     public static void main(String[] args) {

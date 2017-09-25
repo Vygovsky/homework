@@ -1,8 +1,8 @@
 package lesson16.task2;
 
-import lesson11.task2.Size;
+import lesson16.task2.entity.Good;
+import lesson16.task2.entity.User;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

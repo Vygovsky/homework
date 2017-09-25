@@ -1,6 +1,4 @@
-package lesson16.task2;
-
-import lesson17.task3.Horse;
+package lesson16.task2.entity;
 
 import java.io.*;
 import java.util.HashMap;
@@ -8,9 +6,28 @@ import java.util.Map;
 
 public class Basket implements Serializable {
     private Map<Good, Integer> goodMap;
+    private int id;
+    private int goodID;
 
     public Basket() {
-        goodMap=new HashMap<>();
+        goodMap = new HashMap<>();
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getGoodID() {
+        return goodID;
+    }
+
+    public void setGoodID(int goodID) {
+        this.goodID = goodID;
     }
 
     public Basket(Map<Good, Integer> goodMap) {
@@ -49,7 +66,8 @@ public class Basket implements Serializable {
             e1.printStackTrace();
         }
     }
-    public void deserialize(String fileName){
+
+    public void deserialize(String fileName) {
         try (FileInputStream fis = new FileInputStream(fileName);
              ObjectInputStream ois = new ObjectInputStream(fis)) {
             this.goodMap = ((Basket) ois.readObject()).getGoodMap();
