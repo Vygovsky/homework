@@ -1,7 +1,7 @@
 package lesson16.task2.entity;
 
 public class Catalog {
-    private Long id;
+    private int id;
     private String name;
 
     public Catalog() {
@@ -11,7 +11,7 @@ public class Catalog {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

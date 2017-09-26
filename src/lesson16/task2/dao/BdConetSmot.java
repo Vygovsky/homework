@@ -1,7 +1,5 @@
 package lesson16.task2.dao;
 
-import lesson7.task4.com.company.professions.Driver;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
